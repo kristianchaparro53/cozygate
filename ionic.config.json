@@ -1,0 +1,7 @@
+{
+  "name": "cozygate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
