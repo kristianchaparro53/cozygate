@@ -8,3 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   constructor() {}
 }
+export class ExampleComponent {
+  isAlertOpen = false;
+  public alertButtons = ['OK'];
+
+  setOpen(isOpen: boolean) {
+    this.isAlertOpen = isOpen;
+  }
+}

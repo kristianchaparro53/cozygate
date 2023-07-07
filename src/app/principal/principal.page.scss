@@ -1,0 +1,41 @@
+/*Estilos propios de inicio*/
+.titulo{
+    text-align: center;
+    font-family: 'Cakerolli medium';
+    color: rgb(0, 0, 0);
+    }
+    
+    /*Diseño logo*/
+    .logo{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    /*Botones de inicio*/
+    .btnUser{
+    color: black;
+    padding: 20px 24px 20px 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Cakerolli medium';
+    margin-left: 16%;
+    background-color: #64CCC5;
+    }
+    
+    .btnAdmin{
+    color: black;
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    margin-left: 16%;
+    margin-top: 5px;
+    background-color: #64CCC5;
+    }
+    
+    .contenido{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    }
+    

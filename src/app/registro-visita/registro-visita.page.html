@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-title>
+      Generar Visita
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding>
+  <ion-item>
+    <ion-label>1. Nombre y apellido:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>2. Tipo de visitante:</ion-label>
+    <select name="visitante">
+      <option>Ocasional</option>
+      <option>Recurrente</option>
+      <option>Servicios</option>
+    </select>
+  </ion-item>
+  <ion-item>
+    <ion-label>3. Fecha de visita:</ion-label>
+    <input type="date" value="2023-07-07" class="inputfecha">
+  </ion-item>
+  <ion-item>
+    <ion-label>4. No. de visitantes:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+    <div class="div_botones">
+      <button class="boton">Cancelar Registro</button>
+      <button class="boton">Enviar Registro</button>
+    </div>
+</ion-content>
