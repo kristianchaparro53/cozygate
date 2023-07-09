@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="user">
+      <b>Usuarios</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-lg="12" size-md="12" size-sm="6" size-xs="12"
+      *ngFor="let c of[1];">
+        <!--LOGO-->  
+        <ion-img src="assets/img/logo2.png" alt="Cozy Gate" class="logo"></ion-img>
+
+        <div class="inicio">
+        <h1 class="tIniciar"><b>Iniciar sesión</b></h1>
+        </div>
+
+        <!--Poner usuario-->
+        <h1 class="titlesP">USUARIO</h1>
+        <ion-input placeholder="usuario" 
+        label-placement="floating" 
+        fill="outline"
+        error-Text="usuario incorrecto"
+        class="datos"
+        ></ion-input>
+        
+         <!--Poner contraseña-->
+        <h1 class="titlesP">CONTRASEÑA</h1>
+        <ion-input placeholder="contraseña* (6-8dígitos)" 
+        label-placement="floating" 
+        fill="outline"
+        error-Text="contraseña incorrecta"
+        type="password"
+        class="datos"
+        ></ion-input>
+
+      <!--Btn SesiónUser-->
+      <div class="btnSesion">
+        <button ion-button (click)="goToTab2()" class="boton">Iniciar sesión</button>
+        <br>
+        <button ion-button (click)="goToNewContra()" class="conOl">¿Has olvidado la contraseña?</button>
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

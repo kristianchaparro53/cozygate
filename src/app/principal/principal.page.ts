@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-principal',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipalPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+   /*Función de Cambio para ISU*/
+   goToUser(){
+    this.router.navigate(['/login'])
+  }
 
+  /*Crear la función de Cambio ISA*/
+  goToAdmin(){
+    this.router.navigate(['/login-ad'])
+  }
 }

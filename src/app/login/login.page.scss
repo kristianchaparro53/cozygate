@@ -1,0 +1,88 @@
+/*Toolbar*/
+.user{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/*Diseño logo*/
+.logo{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+//Título IS
+.tIniciar {
+    text-align: center;
+    margin-top: -10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+//DIV DEL TÍTULO
+.inicio{
+    background-color: #64CCC5;
+    border-radius: 5px;
+    width: 45%;
+    height: 7%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+//Títulos de Us y Con
+.titlesP{
+    text-align: center;
+    font-family: 'Cakerolli medium';
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+/*Datos*/
+.datos{
+    width: 45%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Botón de IS*/
+.btnSesion{
+    color: black;
+    background: #64CCC5;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Cakerolli medium';
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 20px;
+    margin-top: 20px;
+    background-color: #64CCC5;
+}
+/*Para quitar el fondo del botón*/
+.boton{
+    background-color: transparent;
+}
+
+/*Contraseña olvidada*/
+.conOl{
+    background-color: transparent;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Cakerolli medium';
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*Ajustar Div de btn y Olvidado*/
+.divBtnS{
+    margin-left: auto;
+    margin-right: auto;
+}

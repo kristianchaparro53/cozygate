@@ -1,18 +1,23 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="mycolor">
-    <ion-title>
-      Generar Visita
+  <ion-toolbar color="primary">
+    <ion-title class="registroV">
+      <b>Generar visita</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" padding>
   <ion-item>
-    <ion-label>1. Nombre y apellido:</ion-label>
-    <ion-input></ion-input>
+    <ion-label><b>1. Nombre y apellido:</b></ion-label>
+    <ion-input placeholder="" 
+        label-placement="floating" 
+        fill="outline"
+        error-Text="introduzca un nombre"
+        class="visitas"
+        ></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label>2. Tipo de visitante:</ion-label>
+    <ion-label><b>2. Tipo de visitante:</b></ion-label>
     <select name="visitante">
       <option>Ocasional</option>
       <option>Recurrente</option>
@@ -20,12 +25,17 @@
     </select>
   </ion-item>
   <ion-item>
-    <ion-label>3. Fecha de visita:</ion-label>
+    <ion-label><b>3. Fecha de visita:</b></ion-label>
     <input type="date" value="2023-07-07" class="inputfecha">
   </ion-item>
   <ion-item>
-    <ion-label>4. No. de visitantes:</ion-label>
-    <ion-input></ion-input>
+    <ion-label><b>4. No. de visitantes:</b></ion-label>
+    <ion-input placeholder="" 
+    label-placement="floating" 
+    fill="outline"
+    error-Text="introduzca el total de visitas"
+    class="visitas"
+    ></ion-input>
   </ion-item>
     <div class="div_botones">
       <button class="boton">Cancelar Registro</button>

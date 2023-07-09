@@ -23,8 +23,16 @@ const routes: Routes = [
     loadChildren: () => import('./principal/principal.module').then( m => m.PrincipalPageModule)
   },
   {
-    path: 'nueva-contra',
-    loadChildren: () => import('./nueva-contra/nueva-contra.module').then( m => m.NuevaContraPageModule)
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'login-ad',
+    loadChildren: () => import('./login-ad/login-ad.module').then( m => m.LoginAdPageModule)
+  },
+  {
+    path: 'newcontra',
+    loadChildren: () => import('./newcontra/newcontra.module').then( m => m.NewcontraPageModule)
   }
 ];
 @NgModule({

@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { NuevaContraPageRoutingModule } from './nueva-contra-routing.module';
+import { NewcontraPageRoutingModule } from './newcontra-routing.module';
 
-import { NuevaContraPage } from './nueva-contra.page';
+import { NewcontraPage } from './newcontra.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    NuevaContraPageRoutingModule
+    NewcontraPageRoutingModule
   ],
-  declarations: [NuevaContraPage]
+  declarations: [NewcontraPage]
 })
-export class NuevaContraPageModule {}
+export class NewcontraPageModule {}

@@ -1,30 +1,27 @@
 <ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+        <ion-title class="selector">
+          <b>Selector de inicio</b>
+        </ion-title>
+      </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<div class="contenido">
-<!--GRID ajustable--> 
-<ion-grid fixed>
-<ion-row>
-<ion-col size="12" size-lg="12" size-md="12" size-sm="6" size-xs="12"
-*ngFor="let c of[1];">
-<!--LOGO--> 
-<ion-img src="assets/img/logo2.png" alt="Cozy Gate" class="logo"></ion-img>
-</ion-col>
-
-<ion-col size="12" size-lg="28" size-md="23" size-sm="6" size-xs="12"
-*ngFor="let c of[1];">
-<!--Btn User
-<button ion-button (click)="goToUser()" class="btnUser">Iniciar sesión como usuario </button>-->
-</ion-col>
-
-<ion-col size="12" size-lg="28" size-md="23" size-sm="6" size-xs="12"
-*ngFor="let c of[1];">
-<!--Btn Admin
-<button ion-button (click)="goToAdmin()" class="btnAdmin"> Iniciar sesión como admin </button>-->
-</ion-col>
-</ion-row>
-</ion-grid>
-</div>
+    <div class="contenido">
+    <!--GRID ajustable--> 
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="12" size-lg="12" size-md="12" size-sm="6" size-xs="12"
+            *ngFor="let c of[1];">
+                <!--LOGO--> 
+                <ion-img src="assets/img/logo2.png" alt="Cozy Gate" class="logo"></ion-img>
+                <!--Btn User-->
+                <button ion-button (click)="goToUser()" class="btnUser"><b>Iniciar sesión como usuario</b></button>
+                <!--Btn Admin-->
+                <button ion-button (click)="goToAdmin()" class="btnAdmin"><b>Iniciar sesión como admin</b></button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    </div>
 </ion-content>
 

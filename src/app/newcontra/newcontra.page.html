@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="contra">
+      <b>Cambiar contraseña</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-lg="12" size-md="12" size-sm="6" size-xs="12"
+      *ngFor="let c of[1];">
+
+        <!--LOGO-->  
+        <ion-img src="assets/img/logo2.png" alt="Cozy Gate" class="logo"></ion-img>
+        <div class="actualizar">
+        <h4 class="tActualizar"><b>Nueva contraseña</b></h4>
+        </div>
+   
+      <!--Usuario-->
+      <h1 class="titulosA">Usuario</h1>
+      <ion-input placeholder="usuario" 
+      label-placement="floating" 
+      fill="outline"
+      error-Text="usuario incorrecto"
+      class="datosNew"
+      ></ion-input>
+  
+       <!--Nueva contraseña-->
+       <h1 class="titulosA">Nueva contraseña</h1>
+      <ion-input placeholder="contraseña* (6-8dígitos)" 
+      label-placement="floating" 
+      fill="outline"
+      error-Text="Inserte de 6-8 caracteres"
+      type="password"
+      class="datosNew"
+      ></ion-input>
+      <br>
+        <div class="divBtns">
+          <button ion-button (click)="goToLoginU()" class="btnAceptar">Aceptar</button>
+        </div>
+        <div class="divBtns">
+          <button ion-button (click)="goToLoginU()" class="btnCancelar">Cancelar</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

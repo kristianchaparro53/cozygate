@@ -1,7 +1,12 @@
+/*Toolbar*/
+.selector{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
 /*Estilos propios de inicio*/
 .titulo{
     text-align: center;
-    font-family: 'Cakerolli medium';
     color: rgb(0, 0, 0);
     }
     
@@ -14,28 +19,35 @@
     }
     
     /*Botones de inicio*/
-    .btnUser{
+.btnUser {
     color: black;
     padding: 20px 24px 20px 30px;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 15px;
-    font-family: 'Cakerolli medium';
-    margin-left: 16%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #64CCC5;
-    }
-    
-    .btnAdmin{
+    display: block;
+    width: fit-content; 
+    margin-top: 10px; 
+  }
+  
+  .btnAdmin {
     color: black;
-    padding: 20px 30px 20px 30px;
-    border-radius: 15px;
+    padding: 20px 35px 20px 30px;
+    border-radius: 20px;
     font-size: 15px;
-    margin-left: 16%;
-    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #64CCC5;
-    }
-    
-    .contenido{
-    margin-top: 10%;
-    margin-bottom: 10%;
-    }
+    display: block;
+    width: fit-content; 
+    margin-top: 10px; 
+  }
+  
+  .contenido {
+    margin-top: 8%;
+    margin-bottom: auto;
+  }
+  
     
