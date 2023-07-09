@@ -13,7 +13,7 @@
 
       </ion-col>
     </ion-row>
-    <h2><b>Nombre</b></h2>
+   
     <ion-card>
       
       <ion-card-content>
@@ -26,20 +26,18 @@
         </ion-list>
       </ion-card-content>
     </ion-card>
-
-    <ion-list>
-      <ion-item>
-        <p><b>Fecha</b></p>
-      </ion-item>
-      <ion-item>
-        <p><b>Nombre</b></p>
-      </ion-item>
-      <ion-item>
-        <p><b>Vehiculo</b></p>
-      </ion-item>
-      <ion-item>
-        <p><b>Color</b></p>
-      </ion-item>
-    </ion-list>
   </ion-grid>
+  <ion-card color="light">
+    <ion-card-header>
+      
+      <ion-card-subtitle> <ion-icon name="qr-code"></ion-icon> Codigo Visitante </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button ion-button (click)="GotoGenerarV()" expand="block">Generar</ion-button> 
+      <ion-button ion-button (click)="GotoQR()" expand="block"> Ver Visita</ion-button>
+      <ion-button ion-button (click)="GotoHist()" expand="block"> Historial</ion-button>
+
+    </ion-card-content>
+      </ion-card>
 </ion-content>
+

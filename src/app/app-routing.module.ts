@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'newcontra',
     loadChildren: () => import('./newcontra/newcontra.module').then( m => m.NewcontraPageModule)
+  },
+  {
+    path: 'qr-generado',
+    loadChildren: () => import('./qr-generado/qr-generado.module').then( m => m.QrGeneradoPageModule)
   }
 ];
 @NgModule({

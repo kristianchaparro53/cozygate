@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-historial-residente',
-  templateUrl: './historial-residente.page.html',
-  styleUrls: ['./historial-residente.page.scss'],
+  selector: 'app-qr-generado',
+  templateUrl: './qr-generado.page.html',
+  styleUrls: ['./qr-generado.page.scss'],
 })
-export class HistorialResidentePage implements OnInit {
+export class QrGeneradoPage implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -15,4 +15,5 @@ export class HistorialResidentePage implements OnInit {
   Back(){
     this.router.navigate(['/tabs/tab1'])
   }
+
 }
