@@ -4,12 +4,14 @@
     color: rgb(255, 255, 255);
   }
 
-ion-title{
+  ion-title {
     text-align: center;
     color: black;
     font-weight: 100;
     font-size: larger;
-}
+    display: flex;
+    align-items: center;
+  }
 
 
 select{
@@ -61,4 +63,7 @@ ion-label{
     align-items: center;
   }
   
-  
+/*Flecha de regreso*/
+.flecha{
+    margin-right: 10px;
+}

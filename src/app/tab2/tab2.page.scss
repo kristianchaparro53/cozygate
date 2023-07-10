@@ -1,9 +1,53 @@
-/*Toolbar*/
-.tab2{
+/* Toolbar */
+.tab2 {
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
-h2{
+h2 {
+  text-align: center;
+}
+
+/*Ajustar a pantalla grande*/
+@media screen and (min-width: 768px) {
+  ion-content {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  ion-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  ion-card-header,
+  ion-card-content {
+    flex-basis: 50%;
+  }
+  
+  ion-card-content img {
+    max-width: 100%;
+    height: auto;
+    //margin-left: auto;
+    //margin-right: auto;
+  }
+  
+  .ion-text-center-lg {
     text-align: center;
+    //margin-left: auto;
+    //margin-right: auto;
+  }
+  
+  h2.ion-text-left-lg,
+  p.ion-text-left-lg {
+    text-align: left;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    //margin-left: auto;
+    //margin-right: auto;
+  }
 }

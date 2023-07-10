@@ -1,57 +1,63 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title class="tab2">
+    <ion-title class="ion-text-center">
       <b>Inicio</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  <h2><b>CozyGate</b></h2>
- 
-  <p style="text-align: justify;">CozyGate un generador de QR para un fácil y mejor acceso a tu 
-    fraccionamiento, para ti y tus visitantes.</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <h2><b>CozyGate</b></h2>
+        <p>CozyGate un generador de QR para un fácil y mejor acceso a tu fraccionamiento, para ti y tus visitantes.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-</ion-content>
-<ion-card color="light">
-<ion-card-header>
-  
-  <ion-card-subtitle> <ion-icon name="body"></ion-icon> Accion </ion-card-subtitle>
-</ion-card-header>
-<ion-card-content>
-  <ion-button expand="block">Entrada</ion-button> 
-  <ion-button expand="block" color="danger"> Salida</ion-button>
-</ion-card-content>
-  </ion-card>
-
-  
- <ion-row>
   <ion-card color="light">
     <ion-card-header>
-      <ion-card-title> # 124858 </ion-card-title>
-      <ion-card-subtitle> <br><ion-icon name="key"></ion-icon> Codigo Peatonal</ion-card-subtitle>
+      <ion-card-subtitle> <ion-icon name="body"></ion-icon> Acción </ion-card-subtitle>
     </ion-card-header>
-    </ion-card>
-    <ion-card color="light">
-      <ion-card-header>
-        <ion-card-title> <ion-button fill="outline" color="dark"> <ion-icon name="megaphone-outline"></ion-icon> </ion-button></ion-card-title>
-        <ion-card-subtitle> <ion-icon name="Warning"></ion-icon> Reportar Incidente</ion-card-subtitle>
-      </ion-card-header>
+    <ion-card-content class="ion-text-center">
+      <ion-button expand="block">Entrada</ion-button> 
+      <ion-button expand="block" color="danger">Salida</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row>
+    <ion-col size="6">
+      <ion-card color="light">
+        <ion-card-header>
+          <ion-card-title># 124858</ion-card-title>
+          <ion-card-subtitle> <br><ion-icon name="key"></ion-icon> Código Peatonal</ion-card-subtitle>
+        </ion-card-header>
       </ion-card>
-</ion-row>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card color="light">
+        <ion-card-header>
+          <ion-card-title>
+            <ion-button fill="outline" color="dark">
+              <ion-icon name="megaphone-outline"></ion-icon>
+            </ion-button>
+          </ion-card-title>
+          <ion-card-subtitle> <ion-icon name="warning"></ion-icon> Reportar Incidente</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 
-<ion-card color="light">
-  <ion-card-header>
-    
-    <ion-card-subtitle> <ion-icon name="car"></ion-icon> Mis Vehiculos </ion-card-subtitle>
-  </ion-card-header>
-  <ion-card-content>
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-    <ion-button ion-button (click)="VehiculoMod()" expand="block">Administrar</ion-button> 
-  </ion-card-content>
-    </ion-card>
-
-  
-      
-    
-  
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-subtitle> <ion-icon name="car"></ion-icon> Mis Vehículos </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="ion-text-center">
+      <div class="image-container">
+        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+      </div>
+      <ion-button expand="block">Administrar</ion-button> 
+    </ion-card-content>
+  </ion-card>
+</ion-content>
