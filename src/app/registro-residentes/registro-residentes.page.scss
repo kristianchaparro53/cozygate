@@ -1,0 +1,69 @@
+/*Toolbar*/
+.registroV{
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+  ion-title {
+    text-align: center;
+    color: black;
+    font-weight: 100;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+  }
+
+
+select{
+    background-color: var(--ion-color-mycolor);
+    border-color: white;
+    border-radius: 20px;
+    font-size: small;
+}
+
+/*Introducir datos*/
+ion-label{
+    font-size:x-small;
+}
+/*Datos de visita*/
+.visitas{
+    width: 45%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.inputfecha{
+    background-color: var(--ion-color-mycolor);
+    border-color: white;
+    border-radius: 20px;
+    font-size: small;
+}
+
+.boton {
+    min-width: 130px;
+    height: 40px;
+    color: #000000;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: #64CCC5;
+    box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+    margin-top: 10px;
+    margin-right: 10px; 
+  }
+  
+  .div_botones {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+/*Flecha de regreso*/
+.flecha{
+    margin-right: 10px;
+}

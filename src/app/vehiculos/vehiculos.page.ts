@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vehiculos',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VehiculosPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  Back(){
+    this.router.navigate(['/tabs/tab2'])
   }
 
 }

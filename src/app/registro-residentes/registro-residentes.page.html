@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="registroV">
+      <b>Registrar Residentes</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding>
+  <ion-item>
+    <ion-label><b>1. Nombre y apellido:</b></ion-label>
+    <ion-input placeholder="" 
+        label-placement="floating" 
+        fill="outline"
+        error-Text="introduzca un nombre"
+        class="visitas"
+        ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label><b>2. Celular:</b></ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label><b>3. Usuario:</b></ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label><b>4. Correo Electronico:</b></ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label><b>5. Contrasena:</b></ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label><b>6. Numero de Casa:</b></ion-label>
+  </ion-item>
+    <div class="div_botones">
+      <button class="boton" (click)="Back()">Cancelar Registro</button>
+      <button class="boton">Enviar Registro</button>
+    </div>
+</ion-content>
