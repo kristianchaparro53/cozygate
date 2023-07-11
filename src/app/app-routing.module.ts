@@ -37,6 +37,10 @@ const routes: Routes = [
   {
     path: 'qr-generado',
     loadChildren: () => import('./qr-generado/qr-generado.module').then( m => m.QrGeneradoPageModule)
+  },
+  {
+    path: 'vehiculos',
+    loadChildren: () => import('./vehiculos/vehiculos.module').then( m => m.VehiculosPageModule)
   }
 ];
 @NgModule({

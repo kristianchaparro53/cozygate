@@ -17,7 +17,7 @@
 select{
     background-color: var(--ion-color-mycolor);
     border-color: white;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: small;
 }
 
@@ -37,7 +37,7 @@ ion-label{
 .inputfecha{
     background-color: var(--ion-color-mycolor);
     border-color: white;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: small;
 }
 
@@ -48,7 +48,7 @@ ion-label{
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
     border: none;
     background-color: #64CCC5;
     box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;

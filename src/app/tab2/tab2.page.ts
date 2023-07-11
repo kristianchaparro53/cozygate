@@ -22,5 +22,8 @@ export class Tab2Page {
   BackToTab3(){
     this.router.navigate(['/tabs/tab3'])
   }
+  vehiculos(){
+    this.router.navigate(['/vehiculos'])
+  }
 
 }

@@ -8,15 +8,15 @@
 .titulo{
     text-align: center;
     color: rgb(0, 0, 0);
-    }
+  }
     
-    /*Diseño logo*/
-    .logo{
-    width: 150px;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    }
+/*Diseño logo*/
+.logo{
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  }
     
     /*Botones de inicio*/
 .btnUser {
@@ -50,4 +50,9 @@
     margin-bottom: auto;
   }
   
-    
+  /*Img de fondo del CG*/
+  .image {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
