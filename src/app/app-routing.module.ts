@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'registro-residentes',
     loadChildren: () => import('./registro-residentes/registro-residentes.module').then( m => m.RegistroResidentesPageModule)
+  },
+  {
+    path: 'newcontra-a',
+    loadChildren: () => import('./newcontra-a/newcontra-a.module').then( m => m.NewcontraAPageModule)
   }
 ];
 @NgModule({

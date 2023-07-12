@@ -1,0 +1,84 @@
+/*Toolbar*/
+.contra{
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+/*Diseño logo*/
+.logo{
+    width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+/*Título Actualizar*/
+.tActualizar{
+    font-family: 'Cakerolli medium';
+    font-size: 15px;
+    display:inline-flex
+}
+
+/*Div título*/
+.actualizar{
+    background-color: #64CCC5;
+    border-radius: 20px;
+    width: 45%;
+    height: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/*Títulos de datos*/
+.titulosA{
+    text-align: center;
+    font-family: 'Cakerolli medium';
+    font-size: 15px;
+    margin-top: 4%;
+}
+
+/*Nuevos datos*/
+.datosNew{
+    width: 45%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+/*Botones Aceptar y Cancelar*/
+/*Botón Aceptar*/
+.btnAceptar{
+    color: rgb(255, 255, 255);
+    background: #64CCC5;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Cakerolli medium';
+    width: 30%;
+    height: 20px;
+    background-color: #000000;
+    margin-bottom: 5px;
+}
+
+/*Botón cancelar*/
+.btnCancelar{
+    color: rgb(255, 255, 255);
+    background: #64CCC5;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Cakerolli medium';
+    width: 30%;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+}
+
+/*Div para botones*/
+.divBtns{
+    text-align: center;
+}

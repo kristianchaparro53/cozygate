@@ -17,6 +17,6 @@ export class LoginAdPage implements OnInit {
     this.router.navigate(['/lista-habit'])
   }
   goToNContraA(){
-    this.router.navigate(['/newcontra'])
+    this.router.navigate(['/newcontra-a'])
   }
 }
