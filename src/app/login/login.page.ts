@@ -19,4 +19,7 @@ export class LoginPage implements OnInit {
   goToNewContra(){
     this.router.navigate(['/newcontra'])
   }
+  goRegistroU(){
+    this.router.navigate(['/registro-u'])
+  }
 }

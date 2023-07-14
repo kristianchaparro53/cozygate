@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="registroU">
+      <b>Registro de usuario</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-lg="12" size-md="12" size-sm="6" size-xs="12"
+      *ngFor="let c of[1];">
+        <!--LOGO-->
+        <br>
+        <ion-img src="assets/img/cg2.png" alt="Cozy Gate" class="logo"></ion-img>
+        <br>
+        <div class="inicio">
+        <h1 class="tRegistro"><b>Crear cuenta</b></h1>
+        </div>
+        <br>
+
+        <!--Crear usuario-->
+        <ion-input placeholder="correo"
+        label="Correo"
+        label-placement="floating"
+        fill="outline"
+        error-Text="ingrese su correo"
+        class="datos"
+        ></ion-input>
+
+        <br>
+        <ion-input placeholder="nombre de usuario"
+        label="Nombre de usuario"
+        label-placement="floating"
+        fill="outline"
+        error-Text="ingrese un usuario"
+        class="datos"
+        ></ion-input>
+
+        <br>
+        <ion-input placeholder="calle"
+        label="Calle"
+        label-placement="floating"
+        fill="outline"
+        error-Text="ingrese su calle"
+        type="text"
+        class="datos"
+        ></ion-input>
+
+        <br>
+        <ion-input placeholder="número de casa"
+        label="Número de casa"
+        label-placement="floating"
+        fill="outline"
+        error-Text="ingrese un dato"
+        type="text"
+        class="datos"
+        ></ion-input>
+
+        <br>
+        <ion-input placeholder="celular o teléfono"
+        label="Celular o teléfono"
+        label-placement="floating"
+        fill="outline"
+        error-Text="ingrese su número"
+        type="text"
+        class="datos"
+        ></ion-input>
+
+        <br>
+        <ion-input placeholder="contraseña (6-8 carácteres)"
+        label="Contraseña"
+        label-placement="floating"
+        fill="outline"
+        error-Text="ingrese un dato"
+        type="password"
+        class="datos"
+        ></ion-input>
+
+      <!--Btn Cancelar - Aceptar Registro-->
+      <div class="btnRegistro">
+        <button ion-button (click)="goToSesionA()" class="boton">Registrarme</button>
+      </div>
+      <div class="btnRegistro">
+        <button ion-button (click)="cancelarRA()" class="boton">Cancelar</button>
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

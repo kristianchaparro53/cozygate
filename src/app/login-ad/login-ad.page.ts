@@ -19,4 +19,7 @@ export class LoginAdPage implements OnInit {
   goToNContraA(){
     this.router.navigate(['/newcontra-a'])
   }
+  goToRegistroA(){
+    this.router.navigate(['/registro-a'])
+  }
 }

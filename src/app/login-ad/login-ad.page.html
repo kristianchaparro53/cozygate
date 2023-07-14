@@ -18,19 +18,20 @@
         <div class="inicio">
         <h1 class="tIniciar"><b>Iniciar sesión</b></h1>
         </div>
-
+        <br>
         <!--Poner usuario-->
-        <h1 class="titlesP">USUARIO</h1>
         <ion-input placeholder="usuario" 
+        label="Usuario"
         label-placement="floating" 
         fill="outline"
         error-Text="usuario incorrecto"
         class="datos"
         ></ion-input>
         
+        <br>
          <!--Poner contraseña-->
-        <h1 class="titlesP">CONTRASEÑA</h1>
         <ion-input placeholder="contraseña* (6-8dígitos)" 
+        label="Contraseña"
         label-placement="floating" 
         fill="outline"
         error-Text="contraseña incorrecta"
@@ -38,11 +39,13 @@
         class="datos"
         ></ion-input>
 
-      <!--Btn SesiónUser-->
+      <!--Btn SesiónAdmin y Registro-->
+      <div class="btnSesion">
+        <button ion-button (click)="goToRegistroA()" class="boton">Registrarse</button>
+      </div>
       <div class="btnSesion">
         <button ion-button (click)="goToLista()" class="boton">Iniciar sesión</button>
-        <br>
-        <button ion-button (click)="goToNContraA()" class="conOl">¿Has olvidado la contraseña?</button>
+         <button ion-button (click)="goToNContraA()" class="conOl">¿Has olvidado la contraseña?</button>
       </div>
       </ion-col>
     </ion-row>
