@@ -27,6 +27,28 @@ ion-toolbar {
     margin-bottom: 5%;
 }
 
+/*Fondo*/
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  /*Ajustar a pantallas*/
+  @media (min-width: 768px) { 
+    .fondo {
+      justify-content: center; 
+    }
+  }
+
 //Título IS
 .tIniciar {
     text-align: center;
