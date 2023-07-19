@@ -12,13 +12,4 @@ export class ListaHabitPage implements OnInit {
 
   ngOnInit() {
   }
-  Agregar(){
-    this.router.navigate(['/lista-hab'])
-  }
-  AddUser(){
-    this.router.navigate(['/registro-residentes'])
-  }
-  Back(){
-    this.router.navigate(['/principal'])
-  }
 }

@@ -3,6 +3,20 @@
     text-align: center;
     color: rgb(255, 255, 255);
   }
+  ion-toolbar {
+    ion-buttons[slot="start"] {
+      width: 30px; /*ancho del back*/
+      margin-right: 0;
+    }
+  
+    ion-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -30px; /*margen Izq*/
+      width: calc(100% + 30px); /*ancho del Back*/
+    }
+  }
 
   ion-title {
     text-align: center;
@@ -13,6 +27,21 @@
     align-items: center;
   }
 
+/*Ingrese*/
+.h2{
+  text-align: justify;
+  color: #000000;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+/*Solicita datos*/
+.txtSol{
+  text-align: justify;
+  color: #000000;
+  font-size: 14px;
+  margin-left: 10px;
+}
 
 select{
     background-color: var(--ion-color-mycolor);
@@ -27,8 +56,8 @@ ion-label{
 }
 /*Datos de visita*/
 .visitas{
-    width: 45%;
-    height: 50px;
+    width: 100%;
+    height: 20px;
     margin-left: auto;
     margin-right: auto;
 }

@@ -1,8 +1,9 @@
-
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
-    <ion-title class="qrGen"> 
-      <ion-icon ion-button (click)="Back()" name="arrow-back" class="flecha"></ion-icon>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="qrGen">
       <b>QR de Invitado</b>
     </ion-title>
   </ion-toolbar>
@@ -12,12 +13,13 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-
+        <h1 class="h1"><b>Visita programada</b></h1>
+        <p class="txt">Tu visita ha sido generada, presenta el código 
+          para entrar en la fecha y hora programada al fraccionamiento.</p>
       </ion-col>
     </ion-row>
    
     <ion-card>
-      
       <ion-card-content>
         <ion-list>
           <ion-item>
@@ -29,20 +31,18 @@
       </ion-card-content>
     </ion-card>
 
-
-    
     <ion-list>
       <ion-item>
-        <p><b>Fecha</b></p>
+        <p><b>Nombre de visitante:</b></p>
       </ion-item>
       <ion-item>
-        <p><b>Nombre</b></p>
+        <p><b>Tipo de visitante:</b></p>
       </ion-item>
       <ion-item>
-        <p><b>Vehiculo</b></p>
+        <p><b>Fecha de visita:</b></p>
       </ion-item>
       <ion-item>
-        <p><b>Color</b></p>
+        <p><b>No. de visitantes:</b></p>
       </ion-item>
     </ion-list>
   </ion-grid>

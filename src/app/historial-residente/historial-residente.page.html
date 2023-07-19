@@ -1,9 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
     <ion-title class="historial">
-      <ion-icon ion-button (click)="Back()" name="arrow-back" class="flecha"></ion-icon>
-
-      <b>Historial de Visitas </b> 
+      <b>Historial de visitas</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>

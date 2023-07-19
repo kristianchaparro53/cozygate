@@ -1,36 +1,42 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
     <ion-title class="registroV">
-      <ion-icon ion-button (click)="Back()" name="arrow-back" class="flecha"></ion-icon>
       <b>Generar visita</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" padding>
-  <ion-item>
-    <ion-label><b>1. Nombre y apellido:</b></ion-label>
+  <h2 class="h2"><b>Ingresa los siguientes datos:</b></h2>
+  <p class="txtSol"><b>1. Nombre y apellido:</b></p>
+  <ion-item>    
     <ion-input placeholder="" 
-        label-placement="floating" 
-        fill="outline"
-        error-Text="introduzca un nombre"
-        class="visitas"
-        ></ion-input>
+    label-placement="floating" 
+    fill="outline"
+    error-Text="introduzca un dato"
+    class="visitas"
+    ></ion-input>
   </ion-item>
-  <ion-item>
-    <ion-label><b>2. Tipo de visitante:</b></ion-label>
+
+  <p class="txtSol"><b>2. Tipo de visitante:</b></p>
+  <ion-item>    
     <select name="visitante">
       <option>Ocasional</option>
       <option>Recurrente</option>
       <option>Servicios</option>
     </select>
   </ion-item>
-  <ion-item>
-    <ion-label><b>3. Fecha de visita:</b></ion-label>
+
+  <p class="txtSol"><b>3. Fecha de visita:</b></p>
+  <ion-item>    
     <input type="date" value="2023-07-07" class="inputfecha">
   </ion-item>
-  <ion-item>
-    <ion-label><b>4. No. de visitantes:</b></ion-label>
+
+  <p class="txtSol"><b>4. No. de visitantes:</b></p>
+  <ion-item>    
     <ion-input placeholder="" 
     label-placement="floating" 
     fill="outline"
@@ -38,6 +44,7 @@
     class="visitas"
     ></ion-input>
   </ion-item>
+  
     <div class="div_botones">
       <button class="boton">Cancelar Registro</button>
       <button class="boton">Enviar Registro</button>

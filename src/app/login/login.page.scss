@@ -1,8 +1,25 @@
 /*Toolbar*/
-.user{
+.user {
     text-align: center;
     color: rgb(255, 255, 255);
-}
+  }
+  ion-toolbar {
+    ion-buttons[slot="start"] {
+      width: 30px; /*ancho del back*/
+      margin-right: 0;
+    }
+  
+    ion-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -30px; /*margen Izq*/
+      width: calc(100% + 30px); /*ancho del Back*/
+    }
+  }
+  
+
+
 /*Diseño logo*/
 .logo{
     width: 130px;
@@ -12,24 +29,48 @@
     margin-bottom: 5%;
 }
 
+/*Fondo*/
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  /*Ajustar a pantallas*/
+  @media (min-width: 768px) { 
+    .fondo {
+      justify-content: center; 
+    }
+  }
+
 //Título IS
 .tIniciar {
     text-align: center;
-    margin-top: -10%;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
   
 //DIV DEL TÍTULO
 .inicio{
-    background-color: #64CCC5;
+    background: radial-gradient(#87CEEB, #4682B4);
     border-radius: 20px;
     width: 45%;
     height: 7%;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Datos*/
@@ -38,12 +79,13 @@
     height: 50px;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+    border-radius: 0px;
 }
 
 /*Botón de IS*/
 .btnSesion{
     color: black;
-    background: #64CCC5;
     text-align: center;
     border-radius: 15px;
     font-size: 15px;
@@ -53,7 +95,7 @@
     width: 150px;
     height: 20px;
     margin-top: 20px;
-    background-color: #64CCC5;
+    background-color: #87CEEB;
 }
 /*Para quitar el fondo del botón*/
 .boton{
@@ -64,7 +106,7 @@
 .conOl{
     background-color: transparent;
     text-align: center;
-    font-size: 10px;
+    font-size: 9px;
     font-family: 'Cakerolli medium';
     margin-left: auto;
     margin-right: auto;

@@ -1,22 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/principal"></ion-back-button>
+    </ion-buttons>
     <ion-title class="admin">
       <b>Administrador</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-grid fixed>
-    <ion-row>
-      <ion-col size="12" size-lg="12" size-md="12" size-sm="6" size-xs="12"
-      *ngFor="let c of[1];">
+<ion-content>
         <!--LOGO-->  
         <br>
-        <ion-img src="assets/img/cg2.png" alt="Cozy Gate" class="logo"></ion-img>
+        <ion-img src="assets/img/cg.png" alt="Cozy Gate" class="logo"></ion-img>
         <br>
         <div class="inicio">
-        <h1 class="tIniciar"><b>Iniciar sesión</b></h1>
+        <h1 class="tIniciar"><b>Inicio de sesión</b></h1>
         </div>
         <br>
         <!--Poner usuario-->
@@ -45,9 +44,6 @@
       </div>
       <div class="btnSesion">
         <button ion-button (click)="goToLista()" class="boton">Iniciar sesión</button>
-         <button ion-button (click)="goToNContraA()" class="conOl">¿Has olvidado la contraseña?</button>
+         <button ion-button (click)="goToNContraA()" class="conOl"><b>¿Has olvidado la contraseña?</b></button>
       </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 </ion-content>

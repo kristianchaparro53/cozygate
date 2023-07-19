@@ -1,50 +1,65 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login-ad"></ion-back-button>
+    </ion-buttons>
     <ion-title class="contra">
-      <b>Cambiar contraseña Admin</b>
+      <b>Actualizar contraseña</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-grid fixed>
-    <ion-row>
-      <ion-col size="12" size-lg="12" size-md="12" size-sm="6" size-xs="12"
-      *ngFor="let c of[1];">
-
-        <!--LOGO-->  
-        <ion-img src="assets/img/cg2.png" alt="Cozy Gate" class="logo"></ion-img>
-        <div class="actualizar">
-        <h4 class="tActualizar"><b>Nueva contraseña</b></h4>
-        </div>
-        <br>
-      <!--Usuario-->
-      <ion-input placeholder="usuario" 
-      label="Usuario"
+  <div class="container">
+    <br>
+    <ion-img src="assets/img/cg.png" alt="Cozy Gate" class="logo"></ion-img>
+    <br>
+    <div class="actualizar">
+      <h4 class="tActualizar"><b>Nueva contraseña</b></h4>
+    </div>
+      <br>
+      <ion-input placeholder="Nombre de usuario" 
+      label="Nombre de usuario"
       label-placement="floating" 
       fill="outline"
       error-Text="usuario incorrecto"
       class="datosNew"
       ></ion-input>
-      
+
       <br>
-      <!--Nueva contraseña-->
-      <ion-input placeholder="contraseña* (6-8dígitos)" 
-      label="Contraseña"
+      <ion-input placeholder="Contraseña actual" 
+      label="Contraseña actual"
       label-placement="floating" 
       fill="outline"
-      error-Text="Inserte de 6-8 caracteres"
+      error-Text="contraseña incorrecta"
+      class="datosNew"
+      ></ion-input>
+
+      <br>
+      <ion-input placeholder="Nueva contraseña" 
+      label="contraseña (6-8 dígitos)"
+      label-placement="floating" 
+      fill="outline"
+      error-Text="Inserte de 6-8 carácteres"
       type="password"
       class="datosNew"
       ></ion-input>
+
       <br>
-        <div class="divBtns">
-          <button ion-button (click)="goToLoginA()" class="btnAceptar">Aceptar</button>
-        </div>
-        <div class="divBtns">
-          <button ion-button (click)="goToLoginA()" class="btnCancelar">Cancelar</button>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+      <ion-input placeholder="Confirmar contraseña" 
+      label="Confirmar contraseña"
+      label-placement="floating" 
+      fill="outline"
+      error-Text="contraseña no coincide"
+      class="datosNew"
+      ></ion-input>
+      <br>
+
+    <div class="divBtns">
+      <button ion-button (click)="goToLoginA()" class="btnAceptar">Aceptar</button>
+    </div>
+    <div class="divBtns">
+      <button ion-button (click)="goToLoginA()" class="btnCancelar">Cancelar</button>
+    </div>
+  </div>
 </ion-content>

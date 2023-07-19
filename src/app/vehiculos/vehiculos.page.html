@@ -1,38 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
     <ion-title class="vehiculos">
-      <ion-icon ion-button (click)="Back()" name="arrow-back" class="flecha"></ion-icon>
-      <b>Registro de vehículos</b>
+      <b>Vehículos</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" padding>
+  <h1 class="tt"><b>Registro de vehículos</b></h1>
   <ion-grid>
     <ion-list>
       <ion-item>
-        <p><b>Modelo</b></p>
+        <p><b>Modelo:</b></p>
         <ion-button fill="outline">
           Editar
           <ion-icon slot="end" name="create"></ion-icon>
         </ion-button>
       </ion-item>
       <ion-item>
-        <p><b>Año</b></p>
+        <p><b>Año:</b></p>
         <ion-button fill="outline">
           Editar
           <ion-icon slot="end" name="create"></ion-icon>
         </ion-button>
       </ion-item>
       <ion-item>
-        <p><b>Color</b></p>
+        <p><b>Color:</b></p>
         <ion-button fill="outline">
           Editar
           <ion-icon slot="end" name="create"></ion-icon>
         </ion-button>
       </ion-item>
       <ion-item>
-        <p><b>Placa</b></p>
+        <p><b>Placa:</b></p>
         <ion-button fill="outline">
           Editar
           <ion-icon slot="end" name="create"></ion-icon>
@@ -40,9 +43,9 @@
       </ion-item>
     </ion-list>
     <p></p>
-    <img class="fill" src="assets/icon/fondoVehiculo.png" alt="backLogo">
-    <img class="fill" src="assets/icon/fondoVehiculo.png" alt="backLogo">
-    <button class="boton">Cambiar Imagen</button>
-    <button class="boton">Cambiar Imagen</button>
+    <div class="image-container">
+      <img class="fill" src="assets/icon/fondoVehiculo.png" alt="backLogo">
+      <button class="boton">Cambiar Imagen</button>
+    </div>
   </ion-grid>
 </ion-content>

@@ -1,8 +1,23 @@
 /*Toolbar*/
-.registroU{
+.registroA{
     text-align: center;
     color: rgb(255, 255, 255);
 }
+ion-toolbar {
+    ion-buttons[slot="start"] {
+      width: 30px; /*ancho del back*/
+      margin-right: 0;
+    }
+  
+    ion-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -30px; /*margen Izq*/
+      width: calc(100% + 30px); /*ancho del Back*/
+    }
+  }
+
 /*Diseño logo*/
 .logo{
     width: 130px;
@@ -11,6 +26,7 @@
     margin-right: auto;
     margin-bottom: 1%;
 }
+
 // Título RS
 .tRegistro {
     margin-top: 2%;
@@ -22,7 +38,7 @@
   
   // DIV DEL TÍTULO
   .inicio {
-    background-color: #64CCC5;
+    background: radial-gradient(#87CEEB, #4682B4);
     border-radius: 20px;
     width: 45%;
     height: 7%;
@@ -32,7 +48,6 @@
     justify-content: center;
     align-items: center;
   }
-  
 
 /*Datos*/
 .datos{
@@ -45,7 +60,6 @@
 /*Botón de RU*/
 .btnRegistro{
     color: black;
-    background: #64CCC5;
     text-align: center;
     border-radius: 15px;
     font-size: 15px;
@@ -55,7 +69,7 @@
     width: 150px;
     height: 20px;
     margin-top: 20px;
-    background-color: #64CCC5;
+    background-color: #87CEEB;
     margin-bottom: 5px;
 }
 /*Para quitar el fondo del botón*/

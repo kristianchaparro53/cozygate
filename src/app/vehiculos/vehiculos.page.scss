@@ -3,6 +3,20 @@
     text-align: center;
     color: rgb(255, 255, 255);
 }
+ion-toolbar {
+    ion-buttons[slot="start"] {
+      width: 30px; /*ancho del back*/
+      margin-right: 0;
+    }
+  
+    ion-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -30px; /*margen Izq*/
+      width: calc(100% + 30px); /*ancho del Back*/
+    }
+  }
 
 ion-title{
     text-align: center;
@@ -11,12 +25,9 @@ ion-title{
     font-size: larger;
 }
 
-.foto-usuario{
-        width: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        padding-top: 20px;
+.tt{
+    text-align: center;
+    color: #000000;
 }
 
 h2{
@@ -24,9 +35,9 @@ h2{
 }
 
 img{
-    width: 200px;
-    height: 150px;
-    border: 3px solid #3171e0;
+    width: 350px;
+    height: 200px;
+    border: 3px solid #000000;
     margin: 9px;
 }
 
@@ -39,9 +50,21 @@ img{
     cursor: pointer;
     border-radius: 5px;
     border: none;
-    background-color: #64CCC5;
+    background-color: #87CEEB;
     box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
     margin-top: 10px;
     margin: 36px;
     place-content: center;
   }
+  .botones-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+  }
+  
