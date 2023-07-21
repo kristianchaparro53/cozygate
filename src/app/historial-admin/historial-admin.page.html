@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/lista-habit"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="listaH">
+      <b>Historial de E/S</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-grid class="tabla">
+      <ion-row class="encabezado">
+        <ion-col><ion-card-title class="datosT"><b>Nombre y apellidos</b></ion-card-title></ion-col>
+        <ion-col><ion-card-title class="datosT"><b>Tipo de usuario</b></ion-card-title></ion-col>
+        <ion-col><ion-card-title class="datosT"><b>Hora de entrada</b></ion-card-title></ion-col>
+        <ion-col><ion-card-title class="datosT"><b>Hora de salida</b></ion-card-title></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <ion-card>
+    <ion-grid class="tabla">
+      <ion-row>
+        <ion-col><ion-card-title class="datosTC">*******</ion-card-title></ion-col>
+        <ion-col><ion-card-title class="datosTC">*******</ion-card-title></ion-col>
+        <ion-col><ion-card-title class="datosTC">*******</ion-card-title></ion-col>
+        <ion-col><ion-card-title class="datosTC">*******</ion-card-title></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>

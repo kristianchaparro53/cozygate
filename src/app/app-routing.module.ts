@@ -62,6 +62,10 @@ const routes: Routes = [
   {
     path: 'registro-a',
     loadChildren: () => import('./registro-a/registro-a.module').then( m => m.RegistroAPageModule)
+  },
+  {
+    path: 'historial-admin',
+    loadChildren: () => import('./historial-admin/historial-admin.module').then( m => m.HistorialAdminPageModule)
   }
 ];
 @NgModule({

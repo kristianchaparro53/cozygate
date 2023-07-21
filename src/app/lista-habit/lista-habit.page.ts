@@ -6,10 +6,11 @@ import { Router } from '@angular/router';
   templateUrl: './lista-habit.page.html',
   styleUrls: ['./lista-habit.page.scss'],
 })
-export class ListaHabitPage implements OnInit {
+export class ListaHabitPage  {
 
   constructor(private router: Router) { }
 
-  ngOnInit() {
+  GotoHist(){
+    this.router.navigate(['/historial-admin'])
   }
 }

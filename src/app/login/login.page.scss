@@ -100,6 +100,7 @@
 /*Para quitar el fondo del botón*/
 .boton{
     background-color: transparent;
+    color: black;
 }
 
 /*Contraseña olvidada*/
@@ -119,4 +120,8 @@
 .divBtnS{
     margin-left: auto;
     margin-right: auto;
+}
+
+ion-input{
+  color:black;
 }
