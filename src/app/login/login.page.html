@@ -16,10 +16,6 @@
         <!--LOGO-->  
         <br>
         <ion-img src="assets/img/cg.png" alt="Cozy Gate" class="logo"></ion-img>
-        <div class="inicio">
-        <h1 class="tIniciar"><b>Iniciar sesión</b></h1>
-        </div>
-        <br>
 
         <!--Poner usuario-->
         <ion-input placeholder="Usuario" 
@@ -43,10 +39,12 @@
 
       <!--Btn SesiónUser y Registro-->
       <div class="btnSesion">
-        <button ion-button (click)="goRegistroU()" class="boton">Registrarme</button>
-      </div>
-      <div class="btnSesion">
-        <button ion-button (click)="goToTab2()" class="boton">Iniciar sesión</button>
-         <button ion-button (click)="goToNewContra()" class="conOl"><b>¿Has olvidado la contraseña?</b></button>
+        <button ion-button (click)="goToTab2()" class="boton"><b>Iniciar sesión</b></button>
+        </div>
+        <div class="btnSesionOlv">
+          <button ion-button (click)="goToNewContra()" class="conOl"><b>¿Olvidaste tu contraseña?</b></button>
+          </div>
+      <div class="btnReg">
+        <button ion-button (click)="goRegistroU()" class="boton"><b>Registrarme</b></button>
       </div>
 </ion-content>

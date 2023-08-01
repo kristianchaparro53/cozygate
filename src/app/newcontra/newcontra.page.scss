@@ -48,66 +48,56 @@
   }
 }
 
-/*Título Actualizar*/
-.tActualizar{
-    text-align: center;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-/*Div título*/
-.actualizar{
-    background: radial-gradient(#87CEEB, #4682B4);
-    border-radius: 20px;
-    width: 45%;
-    height: 7%;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /*Nuevos datos*/
 .datosNew{
-    width: 45%;
+    width: 90%;
+    max-width: 400px; /*Ancho máximo para pantallas grandes*/
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
+    background-color: white;
+    border-radius: 0px;
+    margin-bottom: 10px;
 }
 
 /*Botones Aceptar y Cancelar*/
 /*Botón Aceptar*/
 .btnAceptar{
-    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 15px;
-    width: 45%;
-    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 400px;
+    height: 30px;
     background-color: #87CEEB;
-    margin-bottom: 5px;
 }
 
 /*Botón cancelar*/
 .btnCancelar{
-    color: rgb(0, 0, 0);
-    background: #64CCC5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 15px;
-    width: 45%;
-    height: 20px;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
+    max-width: 400px;
+    height: 30px;
     background-color: #87CEEB;
 }
 
 /*Div para botones*/
 .divBtns{
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }

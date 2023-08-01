@@ -47,50 +47,33 @@ ion-toolbar {
   }
 }
 
-// Título RS
-.tRegistro {
-    margin-top: 2%;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  // DIV DEL TÍTULO
-  .inicio {
-    background: radial-gradient(#87CEEB, #4682B4);
-    border-radius: 20px;
-    width: 45%;
-    height: 7%;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
 /*Datos*/
 .datos{
-    width: 45%;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 90%;
+  max-width: 400px; /*Ancho máximo para pantallas grandes*/
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 0px;
+  margin-bottom: 10px;
 }
 
 /*Botón de RU*/
 .btnRegistro{
-    color: black;
-    text-align: center;
-    border-radius: 15px;
-    font-size: 15px;
-    font-family: 'Cakerolli medium';
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    height: 20px;
-    margin-top: 20px;
-    background-color: #87CEEB;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 400px;
+  height: 30px;
+  margin-top: 25px;
+  background-color: #87CEEB;
 }
 /*Para quitar el fondo del botón*/
 .boton{

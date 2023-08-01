@@ -17,10 +17,7 @@
     <br>
     <ion-img src="assets/img/cg.png" alt="Cozy Gate" class="logo"></ion-img>
     <br>
-    <div class="actualizar">
-      <h4 class="tActualizar"><b>Nueva contraseña</b></h4>
-    </div>
-      <br>
+   
       <ion-input placeholder="Nombre de usuario" 
       label="Nombre de usuario"
       label-placement="floating" 
@@ -54,15 +51,17 @@
       label-placement="floating" 
       fill="outline"
       error-Text="contraseña no coincide"
+      type="password"
       class="datosNew"
       ></ion-input>
       <br>
 
     <div class="divBtns">
-      <button ion-button (click)="goToLoginA()" class="btnAceptar">Aceptar</button>
+      <button ion-button (click)="goToLoginA()" class="btnAceptar"><b>Aceptar</b></button>
     </div>
+    <br>
     <div class="divBtns">
-      <button ion-button (click)="goToLoginA()" class="btnCancelar">Cancelar</button>
+      <button ion-button (click)="goToLoginA()" class="btnCancelar"><b>Cancelar</b></button>
     </div>
   </div>
 </ion-content>

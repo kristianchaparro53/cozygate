@@ -13,10 +13,10 @@ export class RegistroUPage implements OnInit {
   ngOnInit() {
   }
    /*Función de Cambio a Login User*/
-   goToSesionA(){
-    this.router.navigate(['/login-ad'])
+   goToSesionU(){
+    this.router.navigate(['/login'])
   }
-  cancelarRA(){
+  cancelarRU(){
     this.router.navigate(['/login'])
   }
 }

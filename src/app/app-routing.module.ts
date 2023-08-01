@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'principal',
+    redirectTo: 'carga',
     pathMatch: 'full'
   },
   {
@@ -66,6 +66,10 @@ const routes: Routes = [
   {
     path: 'historial-admin',
     loadChildren: () => import('./historial-admin/historial-admin.module').then( m => m.HistorialAdminPageModule)
+  },
+  {
+    path: 'carga',
+    loadChildren: () => import('./carga/carga.module').then( m => m.CargaPageModule)
   }
 ];
 @NgModule({
