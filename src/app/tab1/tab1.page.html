@@ -32,12 +32,41 @@
       
       <ion-card-subtitle> <ion-icon name="qr-code"></ion-icon> Codigo Visitante </ion-card-subtitle>
     </ion-card-header>
-    <ion-card-content>
-      <ion-button ion-button (click)="GotoGenerarV()" expand="block" color="secondary"><b>Generar</b></ion-button> 
-      <ion-button ion-button (click)="GotoQR()" expand="block" color="secondary"><b>Ver Visita</b></ion-button>
-      <ion-button ion-button (click)="GotoHist()" expand="block" color="secondary"><b>Historial</b></ion-button>
+    <ion-card-content class="botones">
+          <!-- BOTONES PARA IR A PANTALLAS-->
+           <!--Arriba-->
+          <ion-row>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoGenerarV()" color="secondary" class="generar">
+                <img alt="icon" src="assets/img/generar.png" class="iconG"/> 
+              </button>
+              <p><b>Generar QR</b></p> 
+            </ion-col>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoQR()" color="secondary" class="ver">
+                <img alt="icon" src="assets/img/ojo.png" class="iconV"/> 
+              </button>
+              <p><b>Ver visita</b></p> 
+            </ion-col>
+          </ion-row>
 
+          <!--Abajo-->
+          <ion-row>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoHist()" color="secondary" class="historial">
+                <img alt="icon" src="assets/img/lista.png" class="iconH"/> 
+              </button>
+              <p><b>Historial</b></p>
+            </ion-col>
+            <ion-col size="6" class="boton-col">
+              <button ion-button class="logoCG">
+                <img alt="CozyGate" src="assets/img/cg.png" class="iconCG"/> 
+              </button>
+              <p><b>COZY GATE</b></p>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      <ion-card-content>
     </ion-card-content>
-      </ion-card>
+  </ion-card>
 </ion-content>
-

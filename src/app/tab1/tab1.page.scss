@@ -24,3 +24,61 @@ ion-toolbar{
 h2{
     text-align: center;
 }
+
+/*Botones genradores*/
+/* Estilo para los botones */
+.boton-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+    /* Estilo para el contenido de los botones */
+    .botones p {
+        text-align: center;
+        margin-top: 5px; 
+        color: black;
+    }
+
+/*Design of function of buttons*/
+.generar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #87CEEB;
+}
+.iconG{
+    padding: 10px;
+}
+//Ver visita
+.ver{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #87CEEB;
+}
+.iconV{
+    padding: 10px;
+}
+//Historial
+.historial{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #87CEEB;
+}
+.iconH{
+    padding: 10px;
+}
+//Logo Btn
+.logoCG{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.iconCG{
+    padding: 10px;
+}
