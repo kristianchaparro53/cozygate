@@ -49,28 +49,6 @@ ion-toolbar {
     }
   }
 
-/*Título IS
-.tIniciar {
-    text-align: center;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-  
-//DIV DEL TÍTULO
-.inicio{
-    background: radial-gradient(#87CEEB, #4682B4);
-    border-radius: 20px;
-    width: 45%;
-    height: 7%;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
 
 /*Datos*/
 .datos{
@@ -155,4 +133,29 @@ ion-toolbar {
 
 ion-input{
   color:black;
+}
+
+/*Ajuste a diferentes pantallas*/
+//Celular
+@media (max-width: 576px) {
+  ion-content {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+//Tablets
+@media (min-width: 577px) and (max-width: 991px) {
+  ion-content {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+//Computadora
+@media (min-width: 992px) {
+  ion-content {
+    font-size: 18px;
+    padding: 30px;
+  }
 }

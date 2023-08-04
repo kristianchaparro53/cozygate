@@ -1,73 +1,119 @@
 /*Toolbar*/
 .listaH {
-    text-align: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+ion-toolbar {
+  ion-buttons[slot="start"] {
+    width: 30px; /*ancho del back*/
+    margin-right: 0;
+  }
+
+  ion-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12px;
+    margin-left: -24px; /*margen Izq*/
+    width: calc(100% + 30px); /*ancho del Back*/
   }
-  ion-toolbar {
-    ion-buttons[slot="start"] {
-      width: 30px; /*ancho del back*/
-      margin-right: 0;
-    }
-  
-    ion-title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: -30px; /*margen Izq*/
-      width: calc(100% + 30px); /*ancho del Back*/
-    }
-  }
-  /*Logout
-  .logout {
-    margin-left: auto;
-    margin-right: 16px;
-  }*/
+}
 
-  .btnAg {
-    background-color: transparent;
-    margin-right: 10px; 
-  }
-  
-  .datosT{
-    font-size: 10px;
-    background-color: #87CEEB;
-  }
-  .datosTC{
-    font-size: 10px;
-  }
-  .icon{
-    width: 10px;
-    height: 10px;
-  }
-  /*TAbla de habitantes*/
-  .tabla {
-    ion-row {
-      ion-col {
-        ion-card-title {
-          padding: 8px;
-          text-align: center;
+/*Logout
+.logout {
+  margin-left: auto;
+  margin-right: 16px;
+}*/
+
+.btnAg {
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+.datosT {
+  font-size: 14px;
+  background-color: #87CEEB;
+}
+
+.datosTC {
+  font-size: 14px;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+}
+
+/*Tabla de habitantes*/
+.tabla {
+  ion-row {
+    ion-col {
+      ion-card-title {
+        padding: 8px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+        ion-button {
+          margin-left: 5px; 
           display: flex;
-          justify-content: space-around;
+          justify-content: center;
           align-items: center;
-  
-          ion-button {
-            flex: 2;
-            min-width: 0;
-            margin: 0 1px;
-          }
+        }
+        ion-button:first-child {
+          margin-right: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
-  
-    .encabezado {
-      background-color: #87CEEB;
+    .botones-col {
+      display: flex;
+      justify-content: center; //Alinear los botones H
+      align-items: center; //Alinear los botones V
+    }
+    .centrarTexto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
   }
-  
-  ion-icon{
-    cursor: pointer;
-    margin-right: 5px;
+
+  .encabezado {
+    background-color: #87CEEB;
   }
+}
+
+ion-icon {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+//Celular
+@media (max-width: 576px) {
+  ion-content {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+//Tablets
+@media (min-width: 577px) and (max-width: 991px) {
+  ion-content {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+//Computadora
+@media (min-width: 992px) {
+  ion-content {
+    font-size: 18px;
+    padding: 30px;
+  }
+}

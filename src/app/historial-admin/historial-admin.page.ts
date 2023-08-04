@@ -12,5 +12,8 @@ export class HistorialAdminPage implements OnInit {
 
   ngOnInit() {
   }
+  logout(){
+    this.router.navigate(['/login-ad'])
+  }
 
 }

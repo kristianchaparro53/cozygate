@@ -96,3 +96,28 @@ ion-label{
 .flecha{
     margin-right: 10px;
 }
+
+/*Ajuste a diferentes pantallas*/
+//Celular
+@media (max-width: 576px) {
+  ion-content {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+//Tablets
+@media (min-width: 577px) and (max-width: 991px) {
+  ion-content {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+//Computadora
+@media (min-width: 992px) {
+  ion-content {
+    font-size: 18px;
+    padding: 30px;
+  }
+}

@@ -19,13 +19,11 @@
   }
 
 /*Texto de visitas*/
-h2{
+p{
     text-align: justify;
-    margin-top: 5%;
-    margin-bottom: 5%;
     margin-right: 5%;
     margin-left: 5%;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /*Botones trash*/
@@ -34,4 +32,29 @@ h2{
     height: 25px;
     background-color: rgb(241, 192, 192);
     border-radius: 50%;
+}
+
+/*Ajuste a diferentes pantallas*/
+//Celular
+@media (max-width: 576px) {
+  ion-content {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+//Tablets
+@media (min-width: 577px) and (max-width: 991px) {
+  ion-content {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+//Computadora
+@media (min-width: 992px) {
+  ion-content {
+    font-size: 18px;
+    padding: 30px;
+  }
 }

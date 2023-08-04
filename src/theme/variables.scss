@@ -2,6 +2,11 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+$font-family-base: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+  font-family: $font-family-base;
+}
+
 :root {
   /** primary **/
   --ion-color-primary: #000080;
