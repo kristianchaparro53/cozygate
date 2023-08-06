@@ -1,0 +1,114 @@
+/*Toolbar*/
+.quejas {
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  ion-toolbar {
+    ion-buttons[slot="start"] {
+      width: 30px; /*ancho del back*/
+      margin-right: 0;
+    }
+  
+    ion-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -30px; /*margen Izq*/
+      width: calc(100% + 30px); /*ancho del Back*/
+    }
+  }
+
+/*Texto de quejas*/
+p{
+    text-align: justify;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 16px;
+}
+
+/*Datos*/
+.datos{
+    width: 90%;
+    max-width: 400px; /*Ancho máximo para pantallas grandes*/
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+/*Botón de Aceptar*/
+.btnEnviar{
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 400px;
+    height: 30px;
+    margin-top: 25px;
+    background-color: #87CEEB;
+}
+/*Botón de Cancelar*/
+.btnCancelar{
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 400px;
+  height: 30px;
+  margin-top: 1px;
+  background-color: #87CEEB;
+}
+
+/*Para quitar el fondo del botón*/
+.botones{
+    background-color: transparent;
+    color: black;
+}
+
+
+/*Ajuste a diferentes pantallas*/
+//Celular
+@media (max-width: 576px) {
+    ion-content {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  //Tablets
+  @media (min-width: 577px) and (max-width: 991px) {
+    ion-content {
+      font-size: 16px;
+      padding: 20px;
+    }
+      /*Ajuste a pantalla en horizontal*/
+      .datos {
+        width: 800%; /*Ancho*/
+        max-width: 800px; 
+      }
+  }
+  
+  //Computadora
+  @media (min-width: 992px) {
+    ion-content {
+      font-size: 18px;
+      padding: 30px;
+    }
+    /*Ajuste a pantalla en horizontal*/
+      .datos {
+        width: 1000%; /*Ancho*/
+        max-width: 1200px; 
+      }
+  }

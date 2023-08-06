@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="quejas">
+      <b>Quejas</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p><b>Si tiene una queja o desea reportar algún servicio, complete los siguientes campos:</b></p>
+   <!--Formulario para queja-->
+    <ion-input placeholder="Nombre" 
+      label="Nombre"
+      label-placement="floating" 
+      fill="outline"
+      error-Text="Ingrese su nombre"
+      type="text"
+      class="datos">
+    </ion-input>
+    
+    <br>
+    <ion-input placeholder="Correo" 
+      label="Correo"
+      label-placement="floating" 
+      fill="outline"
+      error-Text="Ingrese su correo"
+      type="email"
+      class="datos">
+    </ion-input>
+
+    <br>
+    <ion-input placeholder="Asunto" 
+      label="Asunto"
+      label-placement="floating" 
+      fill="outline"
+      error-Text="Ingrese su correo"
+      type="text"
+      class="datos">
+    </ion-input>
+
+    <br>
+    <ion-textarea placeholder="Mensaje" 
+      label="Mensaje"
+      label-placement="floating" 
+      fill="outline"
+      error-text="Ingrese su queja"
+      class="datos">
+    </ion-textarea>
+    
+    <!--Btn Enviar y Cancelar Queja-->
+    <div class="btnEnviar">
+      <button ion-button (click)="enviar()" class="botones"><b>Enviar</b></button>
+    </div>
+    <br>
+    <div class="btnCancelar">
+      <button ion-button (click)="cancelar()" class="botones"><b>Cancelar</b></button>
+    </div>
+</ion-content>

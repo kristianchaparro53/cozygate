@@ -70,6 +70,10 @@ const routes: Routes = [
   {
     path: 'carga',
     loadChildren: () => import('./carga/carga.module').then( m => m.CargaPageModule)
+  },
+  {
+    path: 'quejas',
+    loadChildren: () => import('./quejas/quejas.module').then( m => m.QuejasPageModule)
   }
 ];
 @NgModule({

@@ -9,44 +9,39 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" padding>
+<ion-content [fullscreen]="true">
   <h2 class="h2"><b>Ingresa los siguientes datos:</b></h2>
   <p class="txtSol"><b>1. Nombre y apellido:</b></p>
-  <ion-item>    
-    <ion-input placeholder="" 
-    label-placement="floating" 
-    fill="outline"
-    error-Text="introduzca un dato"
-    class="visitas"
+      
+    <ion-input placeholder="Nombre y apellido" 
+      label-placement="floating" 
+      fill="outline"
+      error-Text="Introduzca un dato"
+      class="visitas"
     ></ion-input>
-  </ion-item>
 
-  <p class="txtSol"><b>2. Tipo de visitante:</b></p>
-  <ion-item>    
-    <select name="visitante">
-      <option>Ocasional</option>
-      <option>Recurrente</option>
-      <option>Servicios</option>
-    </select>
-  </ion-item>
-
+      <p class="txtSol"><b>2. Tipo de visitante:</b></p>
+        <ion-select placeholder="Seleccione una opción" class="select">
+          <ion-select-option value="ocasional">Ocasional</ion-select-option>
+          <ion-select-option value="recurrente">Recurrente</ion-select-option>
+          <ion-select-option value="servicios">Servicios</ion-select-option>
+        </ion-select>
+      
+      
   <p class="txtSol"><b>3. Fecha de visita:</b></p>
-  <ion-item>    
-    <input type="date" value="2023-07-07" class="inputfecha">
-  </ion-item>
+    <ion-input type="date" value="2023-07-07" class="inputfecha"></ion-input>
 
   <p class="txtSol"><b>4. No. de visitantes:</b></p>
-  <ion-item>    
-    <ion-input placeholder="" 
-    label-placement="floating" 
-    fill="outline"
-    error-Text="introduzca el total de visitas"
-    class="visitas"
+    <ion-input placeholder="Número total de visitantes" 
+      label-placement="floating" 
+      fill="outline"
+      error-Text="Introduzca el total de visitas"
+      class="visitas"
+      type="number"
     ></ion-input>
-  </ion-item>
   
     <div class="div_botones">
-      <button class="boton">Cancelar Registro</button>
+      <button ion-button (click)="cancelarV()"class="boton">Cancelar Registro</button>
       <button class="boton">Enviar Registro</button>
     </div>
 </ion-content>

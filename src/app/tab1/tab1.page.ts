@@ -19,5 +19,7 @@ export class Tab1Page {
   GotoHist(){
     this.router.navigate(['/historial-residente'])
   }
-  
+  GotoQuejas(){
+    this.router.navigate(['quejas'])
+  }
 }
