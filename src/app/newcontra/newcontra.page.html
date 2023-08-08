@@ -4,7 +4,7 @@
       <ion-back-button defaultHref="/login"></ion-back-button>
     </ion-buttons>
     <ion-title class="contra">
-      <b>Actualizar contraseña</b>
+      <b>Cambiar contraseña</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -18,14 +18,16 @@
     <br>
     <ion-img src="assets/img/cg.png" alt="Cozy Gate" class="logo"></ion-img>
       <br>
-      <ion-input placeholder="Nombre de usuario" 
-      label="Nombre de usuario"
+      <ion-input placeholder="Usuario" 
+      label="Usuario"
       label-placement="floating" 
       fill="outline"
       error-Text="usuario incorrecto"
       class="datosNew"
+      required
       ></ion-input>
 
+      <!--Poner contraseña actual-->
       <br>
       <ion-input placeholder="Contraseña actual" 
       label="Contraseña actual"
@@ -33,28 +35,55 @@
       fill="outline"
       error-Text="contraseña incorrecta"
       class="datosNew"
-      ></ion-input>
+      required
+      [type]="showPassword ? 'text' : 'password'">
+      <!-- Ver y ocultar contraseña -->
+        <ion-icon 
+          slot="end" 
+          name="{{ showPassword ? 'eye' : 'eye-off' }}" 
+          (click)="togglePassword()"
+          class="eyeP"
+        ></ion-icon>
+      </ion-input>
 
-      <br>
-      <ion-input placeholder="Nueva contraseña" 
-      label="contraseña (6-8 dígitos)"
-      label-placement="floating" 
-      fill="outline"
-      error-Text="Inserte de 6-8 carácteres"
-      type="password"
-      class="datosNew"
-      ></ion-input>
+       <!--Poner contraseña nueva-->
+       <br>
+       <ion-input placeholder="Nueva contraseña" 
+       label="Nueva contraseña"
+       label-placement="floating" 
+       fill="outline"
+       error-Text="Inserte de 6-8 carácteres"
+       class="datosNew"
+       required
+       [type]="showPassword ? 'text' : 'password'">
+       <!-- Ver y ocultar contraseña -->
+         <ion-icon 
+           slot="end" 
+           name="{{ showPassword ? 'eye' : 'eye-off' }}" 
+           (click)="togglePassword()"
+           class="eyeP"
+         ></ion-icon>
+       </ion-input>
 
-      <br>
-      <ion-input placeholder="Confirmar contraseña" 
-      label="Confirmar contraseña"
-      type="password"
-      label-placement="floating" 
-      fill="outline"
-      error-Text="contraseña no coincide"
-      class="datosNew"
-      ></ion-input>
-      <br>
+        <!--Poner contraseña confirmar-->
+        <br>
+        <ion-input placeholder="Confirmar contraseña" 
+        label="Confirmar contraseña"
+        label-placement="floating" 
+        fill="outline"
+        error-Text="la contraseña no coincide"
+        class="datosNew"
+        required
+        [type]="showPassword ? 'text' : 'password'">
+        <!-- Ver y ocultar contraseña -->
+          <ion-icon 
+            slot="end" 
+            name="{{ showPassword ? 'eye' : 'eye-off' }}" 
+            (click)="togglePassword()"
+            class="eyeP"
+          ></ion-icon>
+        </ion-input>
+    <br>
 
     <div class="divBtns">
       <button ion-button (click)="goToLoginU()" class="btnAceptar"><b>Aceptar</b></button>

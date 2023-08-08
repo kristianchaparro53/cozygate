@@ -24,45 +24,49 @@
         <br>
 
         <!--Crear usuario-->
-        <ion-input placeholder="correo"
+        <ion-input placeholder="Correo"
         label="Correo"
         label-placement="floating"
         fill="outline"
         error-Text="ingrese su correo"
         class="datos"
+        required
         ></ion-input>
 
         <br>
-        <ion-input placeholder="nombre de usuario"
-        label="Nombre de usuario"
+        <ion-input placeholder="Usuario"
+        label="Usuario"
         label-placement="floating"
         fill="outline"
         error-Text="ingrese un usuario"
         class="datos"
+        required
         ></ion-input>
 
         <br>
-        <ion-input placeholder="calle"
+        <ion-input placeholder="Calle"
         label="Calle"
         label-placement="floating"
         fill="outline"
         error-Text="ingrese su calle"
         type="text"
         class="datos"
+        required
         ></ion-input>
 
         <br>
-        <ion-input placeholder="número de casa"
+        <ion-input placeholder="Número de casa"
         label="Número de casa"
         label-placement="floating"
         fill="outline"
         error-Text="ingrese un dato"
         type="text"
         class="datos"
+        required
         ></ion-input>
 
         <br>
-        <ion-input placeholder="celular o teléfono"
+        <ion-input placeholder="Celular o teléfono"
         label="Celular o teléfono"
         label-placement="floating"
         fill="outline"
@@ -71,15 +75,24 @@
         class="datos"
         ></ion-input>
 
-        <br>
-        <ion-input placeholder="contraseña (6-8 carácteres)"
-        label="Contraseña"
-        label-placement="floating"
-        fill="outline"
-        error-Text="ingrese un dato"
-        type="password"
-        class="datos"
-        ></ion-input>
+          <!--Poner contraseña-->
+          <br>
+          <ion-input placeholder="Contraseña* (6-8 dígitos)" 
+          label="Contraseña"
+          label-placement="floating" 
+          fill="outline"
+          error-Text="contraseña incorrecta"
+          class="datos"
+          required
+          [type]="showPassword ? 'text' : 'password'">
+          <!-- Ver y ocultar contraseña -->
+            <ion-icon 
+              slot="end" 
+              name="{{ showPassword ? 'eye' : 'eye-off' }}" 
+              (click)="togglePassword()"
+              class="eyeP"
+            ></ion-icon>
+          </ion-input>
 
       <!--Btn Cancelar - Aceptar Registro-->
       <div class="btnRegistro">

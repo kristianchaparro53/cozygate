@@ -11,11 +11,11 @@
 
 <ion-content>
   <div class="fondo">
-    <ion-img src="assets/img/fondo.png" alt="Cozy Gate"></ion-img>
+    <ion-img src="assets/img/fondo.png" alt="CozyGate"></ion-img>
   </div>
         <!--LOGO-->  
         <br>
-        <ion-img src="assets/img/cg.png" alt="Cozy Gate" class="logo"></ion-img>
+        <ion-img src="assets/img/cg.png" alt="CozyGate" class="logo"></ion-img>
         <br>
       
         <!--Poner usuario-->
@@ -25,18 +25,27 @@
         fill="outline"
         error-Text="Usuario Incorrecto"
         class="datos"
+        required
         ></ion-input>
         
-        <br>
-         <!--Poner contraseña-->
-        <ion-input placeholder="Contraseña* (6-8 dígitos)" 
-        label="Contraseña"
-        label-placement="floating" 
-        fill="outline"
-        error-Text="contraseña incorrecta"
-        type="password"
-        class="datos"
-        ></ion-input>
+          <!--Poner contraseña-->
+          <br>
+          <ion-input placeholder="Contraseña* (6-8 dígitos)" 
+          label="Contraseña"
+          label-placement="floating" 
+          fill="outline"
+          error-Text="contraseña incorrecta"
+          class="datos"
+          required
+          [type]="showPassword ? 'text' : 'password'">
+          <!-- Ver y ocultar contraseña -->
+            <ion-icon 
+              slot="end" 
+              name="{{ showPassword ? 'eye' : 'eye-off' }}" 
+              (click)="togglePassword()"
+              class="eyeP"
+            ></ion-icon>
+          </ion-input>
 
       <!--Btn SesiónAdmin y Registro-->
        <div class="btnSesion">
@@ -46,7 +55,7 @@
         <button ion-button (click)="goToNContraA()" class="conOl"><b>¿Olvidaste tu contraseña?</b></button>
       </div>
       <div class="btnReg">
-        <button ion-button (click)="goToRegistroA()" class="boton"><b>Registrarse</b></button>
+        <button ion-button (click)="goToRegistroA()" class="boton"><b>Actualizar contraseña</b></button>
       </div>
 </ion-content>
 

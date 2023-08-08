@@ -18,10 +18,11 @@
       fill="outline"
       error-Text="Introduzca un dato"
       class="visitas"
+      required
     ></ion-input>
 
       <p class="txtSol"><b>2. Tipo de visitante:</b></p>
-        <ion-select placeholder="Seleccione una opción" class="select">
+        <ion-select placeholder="Seleccione una opción" class="select" required>
           <ion-select-option value="ocasional">Ocasional</ion-select-option>
           <ion-select-option value="recurrente">Recurrente</ion-select-option>
           <ion-select-option value="servicios">Servicios</ion-select-option>
@@ -29,7 +30,7 @@
       
       
   <p class="txtSol"><b>3. Fecha de visita:</b></p>
-    <ion-input type="date" value="2023-07-07" class="inputfecha"></ion-input>
+    <ion-input type="date" value="2023-07-07" class="inputfecha" required></ion-input>
 
   <p class="txtSol"><b>4. No. de visitantes:</b></p>
     <ion-input placeholder="Número total de visitantes" 
@@ -38,6 +39,7 @@
       error-Text="Introduzca el total de visitas"
       class="visitas"
       type="number"
+      required
     ></ion-input>
   
     <div class="div_botones">

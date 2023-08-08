@@ -24,18 +24,27 @@
         fill="outline"
         error-Text="Usuario Incorrecto"
         class="datos"
+        required
         ></ion-input>
         
-         <!--Poner contraseña-->
+        <!--Poner contraseña-->
         <br>
         <ion-input placeholder="Contraseña* (6-8 dígitos)" 
         label="Contraseña"
         label-placement="floating" 
         fill="outline"
         error-Text="contraseña incorrecta"
-        type="password"
         class="datos"
-        ></ion-input>
+        required
+        [type]="showPassword ? 'text' : 'password'">
+        <!-- Ver y ocultar contraseña -->
+          <ion-icon 
+            slot="end" 
+            name="{{ showPassword ? 'eye' : 'eye-off' }}" 
+            (click)="togglePassword()"
+            class="eyeP"
+          ></ion-icon>
+        </ion-input>
 
       <!--Btn SesiónUser y Registro-->
       <div class="btnSesion">
