@@ -13,6 +13,7 @@
 </ion-header>
 
 <ion-content>
+  <ion-item *ngFor="let result of results">
   <ion-card>
     <ion-grid class="tabla">
         <ion-row class="encabezado">
@@ -32,16 +33,16 @@
 
       <ion-row>
         <ion-col class="centrarTexto">
-          <ion-card-title class="datosTC">*********</ion-card-title>
+          <ion-card-title class="datosTC">{{result.Name}}</ion-card-title>
         </ion-col>
         <ion-col class="centrarTexto">
-          <ion-card-title class="datosTC">*********</ion-card-title>
+          <ion-card-title class="datosTC">{{result.Calle}}</ion-card-title>
         </ion-col>
         <ion-col class="centrarTexto">
-          <ion-card-title class="datosTC">*********</ion-card-title>
+          <ion-card-title class="datosTC">{{result.Casa}}</ion-card-title>
         </ion-col>
         <ion-col class="centrarTexto">
-          <ion-card-title class="datosTC">*********</ion-card-title>
+          <ion-card-title class="datosTC">{{result.Cel}}</ion-card-title>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -54,4 +55,5 @@
       </ion-row>
     </ion-grid>
   </ion-card>
+</ion-item>
 </ion-content>

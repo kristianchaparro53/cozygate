@@ -11,10 +11,15 @@ export class ConexionMBDService {
   url2 = "http://localhost:4000/admin";
   url3 = "http://localhost:4000/access";
   url4 = "http://localhost:4000/visita";
+  
 
 
 
   constructor(private http: HttpClient) { }
+
+  get():Observable<any>{
+    return this.http.get(this.url);
+   }
   
   getUsers():Observable<any>{
    return this.http.get(this.url);
@@ -58,6 +63,9 @@ export class ConexionMBDService {
  
    addVisita(Usuario: {}):Observable<any>{
      return this.http.post(this.url4, Usuario);
+   }
+   getOneVisita(_id:string):Observable<any>{
+    return this.http.get(`${this.url4}/${_id}`);
    }
 
    

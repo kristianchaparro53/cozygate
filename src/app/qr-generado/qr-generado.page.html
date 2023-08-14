@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+      <ion-back-button defaultHref="/op1/:correo"></ion-back-button>
     </ion-buttons>
     <ion-title class="qrGen">
       <b>QR de Invitado</b>
@@ -24,7 +24,7 @@
         <ion-list>
           <ion-item>
 
-            <qrcode class="codigo" [qrdata]="User._id"  [width]="200" [errorCorrectionLevel]="'M'"></qrcode>            
+            <qrcode class="codigo" [qrdata]="data3._id"  [width]="200" [errorCorrectionLevel]="'M'"></qrcode>            
           
           </ion-item>
         </ion-list>
@@ -33,13 +33,13 @@
 
     <ion-list>
       <ion-item>
-        <p><b>Nombre de visitante:</b></p>
+        <p><b>Nombre de visitante:</b> {{data3.Name}}</p>
       </ion-item>
       <ion-item>
-        <p><b>Tipo de visitante:</b></p>
+        <p><b>Tipo de visitante:</b> {{data3.Tipo}}</p>
       </ion-item>
       <ion-item>
-        <p><b>Fecha de visita:</b></p>
+        <p><b>Fecha de visita:</b>  {{data3.Date}}</p>
       </ion-item>
       
     </ion-list>

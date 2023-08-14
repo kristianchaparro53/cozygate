@@ -19,8 +19,8 @@ export class Op1Page implements OnInit {
   }
   getIDFromURL(){
     let url = this.router.url
-    let arr = url.split("/",4)
-    let id = arr[3]
+    let arr = url.split("/",3)
+    let id = arr[2]
     return id    
     
   }
@@ -41,16 +41,16 @@ export class Op1Page implements OnInit {
 
 
   GotoGenerarV(){
-    this.router.navigate(['/registro-visita'])
+    this.router.navigate(['/registro-visita',this.data2.Correo])
   }
   GotoQR(){
-    this.router.navigate(['/qr-generado'])
+    this.router.navigate(['/qr-generado',this.data2.Correo])
   }
   GotoHist(){
-    this.router.navigate(['/historial-residente'])
+    this.router.navigate(['/historial-residente',this.data2.Correo])
   }
   GotoQuejas(){
-    this.router.navigate(['quejas'])
+    this.router.navigate(['quejas',this.data2.Correo])
   }
 
 }

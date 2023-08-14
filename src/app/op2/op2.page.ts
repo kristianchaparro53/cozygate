@@ -20,8 +20,8 @@ export class Op2Page implements OnInit {
   }
   getIDFromURL(){
     let url = this.router.url
-    let arr = url.split("/",4)
-    let id = arr[3]
+    let arr = url.split("/",3)
+    let id = arr[2]
     return id    
     
   }
@@ -47,7 +47,7 @@ export class Op2Page implements OnInit {
     this.router.navigate(['/op1',this.data2.Correo])
   }
   BackToTab2(){
-    this.router.navigate(['/tabs/tab2',this.data2.Correo])
+    this.router.navigate(['/op2',this.data2.Correo])
   }
   BackToTab3(){
     this.router.navigate(['/op3',this.data2.Correo])

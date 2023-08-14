@@ -20,8 +20,8 @@ export class Op3Page implements OnInit {
   }
   getIDFromURL(){
     let url = this.router.url
-    let arr = url.split("/",4)
-    let id = arr[3]
+    let arr = url.split("/",3)
+    let id = arr[2]
     return id    
     
   }
@@ -39,6 +39,7 @@ export class Op3Page implements OnInit {
     )
   }
   data2 ={ Correo:""}
+  
   
 
   cerrarSesion(){

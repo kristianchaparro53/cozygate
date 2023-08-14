@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ConexionMBDService } from '../services/conexion-mbd.service';
 
 @Component({
   selector: 'app-registro-residentes',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class RegistroResidentesPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private conexion:ConexionMBDService) { }
 
   ngOnInit() {
     
@@ -18,6 +19,13 @@ export class RegistroResidentesPage implements OnInit {
   }
   Back(){
     this.router.navigate(['/lista-habit'])
+  }
+  getUsers(){
+    this.conexion.getVisita().subscribe(data =>{
+      console.log(data);
+    }, error => {
+      console.log(error);
+    })
   }
 
 }

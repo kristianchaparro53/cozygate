@@ -1,104 +1,111 @@
 /*Toolbar*/
 .selector{
-    text-align: center;
-    color: rgb(255, 255, 255);
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 /*Estilos propios de inicio*/
 .titulo{
-    text-align: center;
-    color: rgb(0, 0, 0);
-  }
-    
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/*Centrar todo*/
+.contenido {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 50vh; 
+margin: 0; 
+padding: 0;
+}
+
+  
 /*Diseño logo*/
 .logo{
-  width: 150px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  }
+width: 150px;
+height: 150px;
+}
 
 /*Fondo*/
 .fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -1;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
 }
 /*Ajustar a pantallas*/
 @media (min-width: 768px) { 
-  .fondo {
-    justify-content: center; 
-  }
+.fondo {
+  justify-content: center; 
+}
 }
 
- 
-  /*Botones de inicio*/
+
+/*Botones de inicio*/
 .btnUser {
-    color: black;
-    padding: 20px 24px 20px 30px;
-    border-radius: 20px;
-    font-size: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    background: radial-gradient(#87CEEB, #4682B4);
-    display: block;
-    width: fit-content; 
-    margin-top: 10px; 
-  }
-  
-  .btnAdmin {
-    color: black;
-    padding: 20px 35px 20px 30px;
-    border-radius: 20px;
-    font-size: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    background: radial-gradient(#87CEEB, #4682B4);
-    display: block;
-    width: fit-content; 
-    margin-top: 10px; 
-  }
-  
-  .contenido {
-    margin-top: 8%;
-    margin-bottom: auto;
-  }
-  
-  /*Img de fondo del CG*/
-  .image {
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /*Ajuste a diferentes pantallas*/
+
+
+  color: black;
+padding: 20px 30px;
+border-radius: 20px;
+font-size: 15px;
+background: radial-gradient(#87CEEB, #4682B4);
+margin-top: 10px;
+width: 100%; /* Ancho al 100% */
+max-width: 300px; /* Ancho máximo */
+}
+
+.btnAdmin {color: black;
+  padding: 20px 30px;
+  border-radius: 20px;
+  font-size: 15px;
+  background: radial-gradient(#87CEEB, #4682B4);
+  margin-top: 10px;
+  width: 100%; /* Ancho al 100% */
+  max-width: 300px; /* Ancho máximo */
+}
+
+.contenido {
+  margin-top: 8%;
+  margin-bottom: auto;
+}
+
+/*Img de fondo del CG*/
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Ajuste a diferentes pantallas*/
 //Celular
 @media (max-width: 576px) {
-  ion-content {
-    font-size: 14px;
-    padding: 10px;
-  }
+ion-content {
+  font-size: 14px;
+  padding: 10px;
+}
 }
 
 //Tablets
 @media (min-width: 577px) and (max-width: 991px) {
-  ion-content {
-    font-size: 16px;
-    padding: 20px;
-  }
+ion-content {
+  font-size: 16px;
+  padding: 20px;
+}
 }
 
 //Computadora
 @media (min-width: 992px) {
-  ion-content {
-    font-size: 18px;
-    padding: 30px;
-  }
+ion-content {
+  font-size: 18px;
+  padding: 30px;
+}
 }

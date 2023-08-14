@@ -20,11 +20,11 @@ const routes: Routes = [
     loadChildren: () => import('./lista-habit/lista-habit.module').then( m => m.ListaHabitPageModule)
   },
   {
-    path: 'historial-residente',
+    path: 'historial-residente/:correo',
     loadChildren: () => import('./historial-residente/historial-residente.module').then( m => m.HistorialResidentePageModule)
   },
   {
-    path: 'registro-visita',
+    path: 'registro-visita/:Uid',
     loadChildren: () => import('./registro-visita/registro-visita.module').then( m => m.RegistroVisitaPageModule)
   },
   {
@@ -44,7 +44,7 @@ const routes: Routes = [
     loadChildren: () => import('./newcontra/newcontra.module').then( m => m.NewcontraPageModule)
   },
   {
-    path: 'qr-generado',
+    path: 'qr-generado/:_id',
     loadChildren: () => import('./qr-generado/qr-generado.module').then( m => m.QrGeneradoPageModule)
   },
   {
@@ -76,7 +76,7 @@ const routes: Routes = [
     loadChildren: () => import('./carga/carga.module').then( m => m.CargaPageModule)
   },
   {
-    path: 'quejas',
+    path: 'quejas/:correo',
     loadChildren: () => import('./quejas/quejas.module').then( m => m.QuejasPageModule)
   },
   {
