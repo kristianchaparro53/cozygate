@@ -1,0 +1,73 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="qrT"> 
+      <b>QR de Residente</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+   
+    <ion-card>
+      
+      <ion-card-content>
+        <ion-list>
+          <h1 class="nombreR"><b>Nombre</b></h1>
+          <br>
+          <ion-item>
+              <img alt="Silhouette of mountains" src="assets/img/qr.png" class="QR"/>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </ion-grid>
+  <ion-card color="light">
+    <ion-card-header>
+      
+      <ion-card-subtitle> <ion-icon name="qr-code"></ion-icon> Codigo Visitante </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="botones">
+          <!-- BOTONES PARA IR A PANTALLAS-->
+           <!--Arriba-->
+          <ion-row>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoGenerarV()" class="generar">
+                <img alt="icon" src="assets/img/generar.png" class="iconG"/> 
+              </button>
+              <p><b>Generar QR</b></p> 
+            </ion-col>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoQR()" class="ver">
+                <img alt="icon" src="assets/img/ojo.png" class="iconV"/> 
+              </button>
+              <p><b>Ver visita</b></p> 
+            </ion-col>
+          </ion-row>
+
+          <!--Abajo-->
+          <ion-row>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoHist()" class="historial">
+                <img alt="icon" src="assets/img/lista.png" class="iconH"/> 
+              </button>
+              <p><b>Historial</b></p>
+            </ion-col>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoQuejas()" class="historial">
+                <img alt="icon" src="assets/img/quejas.png" class="iconQ"/> 
+              </button>
+              <p><b>Quejas</b></p>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      <ion-card-content>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

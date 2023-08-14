@@ -1,0 +1,109 @@
+/*Toolbar*/
+.qrT{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.QR{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+/*NombreRes*/
+.nombreR{
+    text-align: center;
+    color: black;
+}
+
+ion-toolbar{
+    background-color: var(--ion-color-mycolor);
+}
+
+h2{
+    text-align: center;
+}
+
+/*Botones genradores*/
+/* Estilo para los botones */
+.boton-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+    /* Estilo para el contenido de los botones */
+    .botones p {
+        text-align: center;
+        margin-top: 5px; 
+        color: black;
+    }
+
+/*Design of function of buttons*/
+.generar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.iconG{
+    padding: 10px;
+}
+//Ver visita
+.ver{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.iconV{
+    padding: 10px;
+}
+//Historial
+.historial{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.iconH{
+    padding: 10px;
+}
+//Logo Btn
+.quejas{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.iconQ{
+    padding: 10px;
+}
+
+/*Ajuste a diferentes pantallas*/
+//Celular
+@media (max-width: 576px) {
+    ion-content {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  //Tablets
+  @media (min-width: 577px) and (max-width: 991px) {
+    ion-content {
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+  
+  //Computadora
+  @media (min-width: 992px) {
+    ion-content {
+      font-size: 18px;
+      padding: 30px;
+    }
+  }

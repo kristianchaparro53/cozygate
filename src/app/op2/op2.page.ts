@@ -1,15 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { ConexionMBDService } from '../services/conexion-mbd.service';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-op2',
+  templateUrl: './op2.page.html',
+  styleUrls: ['./op2.page.scss'],
 })
-export class Tab1Page {
+export class Op2Page implements OnInit {
 
   constructor(private router: Router,private conexion:ConexionMBDService) {}
+  ngOnInit() {
+  }
 
 
   ionViewDidEnter() {
@@ -37,17 +40,20 @@ export class Tab1Page {
   }
   data2 ={ Correo:""}
 
+  VehiculoMod(){
+    this.router.navigate(['/VehiculoMod'])
+  }
+  BackToTab1(){
+    this.router.navigate(['/op1',this.data2.Correo])
+  }
+  BackToTab2(){
+    this.router.navigate(['/tabs/tab2',this.data2.Correo])
+  }
+  BackToTab3(){
+    this.router.navigate(['/op3',this.data2.Correo])
+  }
+  vehiculos(){
+    this.router.navigate(['/vehiculos'])
+  }
 
-  GotoGenerarV(){
-    this.router.navigate(['/registro-visita'])
-  }
-  GotoQR(){
-    this.router.navigate(['/qr-generado'])
-  }
-  GotoHist(){
-    this.router.navigate(['/historial-residente'])
-  }
-  GotoQuejas(){
-    this.router.navigate(['quejas'])
-  }
 }

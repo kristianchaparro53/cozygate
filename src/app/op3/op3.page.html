@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="perfil">
+      <b>Perfil</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="assets/icon/user.png" alt="user" class="foto-usuario">
+      </ion-col>
+    </ion-row>
+
+    <ion-list>
+      <ion-item>
+        <p><b>Usuario:</b></p>
+        <ion-button fill="outline">
+          Editar
+          <ion-icon slot="end" name="create"></ion-icon>
+        </ion-button>
+      </ion-item>
+      <ion-item>
+        <p><b>Correo:</b></p>
+        <ion-button fill="outline">
+          Editar
+          <ion-icon slot="end" name="create"></ion-icon>
+        </ion-button>
+      </ion-item>
+      <ion-item>
+        <p><b>Calle:</b></p>
+        <ion-button fill="outline">
+          Editar
+          <ion-icon slot="end" name="create"></ion-icon>
+        </ion-button>
+      </ion-item>
+      <ion-item>
+        <p><b>Número de casa:</b></p>
+        <ion-button fill="outline">
+          Editar
+          <ion-icon slot="end" name="create"></ion-icon>
+        </ion-button>
+      </ion-item>
+      <ion-item>
+        <p><b>Celular:</b></p>
+        <ion-button fill="outline">
+          Editar
+          <ion-icon slot="end" name="create"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+    <button ion-button (click)="cerrarSesion()" class="boton" color="danger">Cerrar sesión</button>
+  </ion-grid>
+</ion-content>

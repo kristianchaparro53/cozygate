@@ -16,4 +16,11 @@ export class QrGeneradoPage implements OnInit {
     this.router.navigate(['/tabs/tab1'])
   }
 
+  User={
+    _id:"Mames"
+  }
+
+
+
+
 }

@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
+    path: 'tan1/:correo',
+    loadChildren: () => import('./tab1/tab1.module').then(m => m.Tab1PageModule)
+  },
+  {
     path: 'lista-habit',
     loadChildren: () => import('./lista-habit/lista-habit.module').then( m => m.ListaHabitPageModule)
   },
@@ -74,6 +78,18 @@ const routes: Routes = [
   {
     path: 'quejas',
     loadChildren: () => import('./quejas/quejas.module').then( m => m.QuejasPageModule)
+  },
+  {
+    path: 'op2/:correo',
+    loadChildren: () => import('./op2/op2.module').then( m => m.Op2PageModule)
+  },
+  {
+    path: 'op1/:correo',
+    loadChildren: () => import('./op1/op1.module').then( m => m.Op1PageModule)
+  },
+  {
+    path: 'op3/:correo',
+    loadChildren: () => import('./op3/op3.module').then( m => m.Op3PageModule)
   }
 ];
 @NgModule({

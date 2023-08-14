@@ -1,0 +1,64 @@
+/*Toolbar*/
+.perfil{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+ion-title{
+    text-align: center;
+    color: black;
+    font-weight: 100;
+    font-size: larger;
+}
+
+.foto-usuario{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 20px;
+}
+h2{
+    text-align: center;
+}
+
+.boton {
+    height: 40px;
+    color: #000000;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background: radial-gradient(#f76767, #ff8b47);
+    box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Ajuste a diferentes pantallas*/
+//Celular
+@media (max-width: 576px) {
+    ion-content {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  //Tablets
+  @media (min-width: 577px) and (max-width: 991px) {
+    ion-content {
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+  
+  //Computadora
+  @media (min-width: 992px) {
+    ion-content {
+      font-size: 18px;
+      padding: 30px;
+    }
+  }

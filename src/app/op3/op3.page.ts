@@ -1,17 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ConexionMBDService } from '../services/conexion-mbd.service';
 
+
+
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-op3',
+  templateUrl: './op3.page.html',
+  styleUrls: ['./op3.page.scss'],
 })
-export class Tab1Page {
+export class Op3Page implements OnInit {
 
-  constructor(private router: Router,private conexion:ConexionMBDService) {}
+  constructor(private router: Router,private conexion:ConexionMBDService) { }
 
-
+  ngOnInit() {
+  }
   ionViewDidEnter() {
     this.getUserByUID(this.getIDFromURL());
   }
@@ -36,18 +39,10 @@ export class Tab1Page {
     )
   }
   data2 ={ Correo:""}
+  
 
+  cerrarSesion(){
+    this.router.navigate(['/principal'])
+  }
 
-  GotoGenerarV(){
-    this.router.navigate(['/registro-visita'])
-  }
-  GotoQR(){
-    this.router.navigate(['/qr-generado'])
-  }
-  GotoHist(){
-    this.router.navigate(['/historial-residente'])
-  }
-  GotoQuejas(){
-    this.router.navigate(['quejas'])
-  }
 }

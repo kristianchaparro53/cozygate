@@ -24,49 +24,73 @@
         <br>
 
         <!--Crear usuario-->
-        <ion-input placeholder="Correo"
+        <ion-input 
+        #name
+        placeholder="nombre de usuario"
+        label="Nombre de usuario"
+        label-placement="floating"
+        fill="outline"
+        error-Text="ingrese un usuario"
+        class="datos"
+        ></ion-input>
+        <br>
+
+        <br>
+        <ion-input 
+        #correo
+        placeholder="correo"
         label="Correo"
         label-placement="floating"
         fill="outline"
         error-Text="ingrese su correo"
         class="datos"
-        required
         ></ion-input>
 
         <br>
-        <ion-input placeholder="Usuario"
-        label="Usuario"
+        <ion-input 
+        #pass
+        placeholder="contraseña (6-8 carácteres)"
+        label="Contraseña"
         label-placement="floating"
         fill="outline"
-        error-Text="ingrese un usuario"
-        class="datos"
-        required
-        ></ion-input>
-
+        error-Text="ingrese un dato"
+        [type]="showPassword ? 'text' : 'password'"
+        class="datos">
+        <!-- Ver y ocultar contraseña -->
+        <ion-icon 
+        slot="end" 
+        name="{{ showPassword ? 'eye' : 'eye-off' }}" 
+        (click)="togglePassword()"
+        class="eyeP"
+      ></ion-icon>
+        </ion-input>
         <br>
-        <ion-input placeholder="Calle"
+        <ion-input 
+        #calle
+        placeholder="calle"
         label="Calle"
         label-placement="floating"
         fill="outline"
         error-Text="ingrese su calle"
         type="text"
         class="datos"
-        required
         ></ion-input>
 
         <br>
-        <ion-input placeholder="Número de casa"
+        <ion-input
+        #casa
+        placeholder="número de casa"
         label="Número de casa"
         label-placement="floating"
         fill="outline"
         error-Text="ingrese un dato"
         type="text"
         class="datos"
-        required
         ></ion-input>
-
-        <br>
-        <ion-input placeholder="Celular o teléfono"
+      <br>
+        <ion-input
+        #cel
+        placeholder="celular o teléfono"
         label="Celular o teléfono"
         label-placement="floating"
         fill="outline"
@@ -75,28 +99,12 @@
         class="datos"
         ></ion-input>
 
-          <!--Poner contraseña-->
-          <br>
-          <ion-input placeholder="Contraseña* (6-8 dígitos)" 
-          label="Contraseña"
-          label-placement="floating" 
-          fill="outline"
-          error-Text="contraseña incorrecta"
-          class="datos"
-          required
-          [type]="showPassword ? 'text' : 'password'">
-          <!-- Ver y ocultar contraseña -->
-            <ion-icon 
-              slot="end" 
-              name="{{ showPassword ? 'eye' : 'eye-off' }}" 
-              (click)="togglePassword()"
-              class="eyeP"
-            ></ion-icon>
-          </ion-input>
+        <br>
+
 
       <!--Btn Cancelar - Aceptar Registro-->
       <div class="btnRegistro">
-        <button ion-button (click)="goToSesionU()" class="boton"><b>Registrarse</b></button>
+        <button ion-button (click)="goToSesionU(name,correo,pass,cel,casa,calle)" class="boton"><b>Registrarse</b></button>
       </div>
       <div class="btnRegistro">
         <button ion-button (click)="cancelarRU()" class="boton"><b>Cancelar</b></button>

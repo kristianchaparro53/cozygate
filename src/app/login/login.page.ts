@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ConexionMBDService } from '../services/conexion-mbd.service';
 
 @Component({
   selector: 'app-login',
@@ -12,13 +13,30 @@ export class LoginPage implements OnInit {
   showPassword = false;
   passwordToggleIcon = 'eye';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private conexion:ConexionMBDService) { }
 
   ngOnInit() {
   }
+  
+
    ///Función de Cambio a bienvenida
-  goToTab2(){
-    this.router.navigate(['/tabs/tab2'])
+  goToTab2(correo:any,pass:any){
+    this.conexion.getOne(correo.value).subscribe(data =>{
+      console.log(data)
+
+        if(pass.value == data.Password){
+          console.log("si")
+        this.router.navigate(['op2',correo.value])
+
+        }else{
+
+          console.log("NO")
+        }
+      //this.router.navigate(['/principal]'])
+
+    })
+    
+    
   }
   goToNewContra(){
     this.router.navigate(['/newcontra'])

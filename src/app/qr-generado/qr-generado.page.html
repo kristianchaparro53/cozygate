@@ -23,9 +23,9 @@
       <ion-card-content>
         <ion-list>
           <ion-item>
-            
-              <img alt="Silhouette of mountains" src="assets/img/qr.png" class="qrG"/>
-            
+
+            <qrcode class="codigo" [qrdata]="User._id"  [width]="200" [errorCorrectionLevel]="'M'"></qrcode>            
+          
           </ion-item>
         </ion-list>
       </ion-card-content>
@@ -41,9 +41,7 @@
       <ion-item>
         <p><b>Fecha de visita:</b></p>
       </ion-item>
-      <ion-item>
-        <p><b>No. de visitantes:</b></p>
-      </ion-item>
+      
     </ion-list>
   </ion-grid>
 </ion-content>

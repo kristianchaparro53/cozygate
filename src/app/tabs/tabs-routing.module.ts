@@ -8,15 +8,15 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'tab1/:correo',
         loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
       },
       {
-        path: 'tab2',
+        path: 'tab2/:correo',
         loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
       },
       {
-        path: 'tab3',
+        path: 'tab3/:correo',
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {

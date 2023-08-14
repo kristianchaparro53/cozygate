@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ConexionMBDService } from '../services/conexion-mbd.service';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-op1',
+  templateUrl: './op1.page.html',
+  styleUrls: ['./op1.page.scss'],
 })
-export class Tab1Page {
+export class Op1Page implements OnInit {
 
   constructor(private router: Router,private conexion:ConexionMBDService) {}
 
+  ngOnInit() {
+  }
 
   ionViewDidEnter() {
     this.getUserByUID(this.getIDFromURL());
@@ -50,4 +52,5 @@ export class Tab1Page {
   GotoQuejas(){
     this.router.navigate(['quejas'])
   }
+
 }
