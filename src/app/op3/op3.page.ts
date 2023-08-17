@@ -45,5 +45,14 @@ export class Op3Page implements OnInit {
   cerrarSesion(){
     this.router.navigate(['/principal'])
   }
+  BackToTab1(){
+    this.router.navigate(['/op1',this.data2.Correo])
+  }
+  BackToTab2(){
+    this.router.navigate(['/op2',this.data2.Correo])
+  }
+  BackToTab3(){
+    this.router.navigate(['/op3',this.data2.Correo])
+  }
 
 }

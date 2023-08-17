@@ -52,5 +52,15 @@ export class Op1Page implements OnInit {
   GotoQuejas(){
     this.router.navigate(['quejas',this.data2.Correo])
   }
+  BackToTab1(){
+    this.router.navigate(['/op1',this.data2.Correo])
+  }
+  BackToTab2(){
+    this.router.navigate(['/op2',this.data2.Correo])
+  }
+  BackToTab3(){
+    this.router.navigate(['/op3',this.data2.Correo])
+  }
+  
 
 }

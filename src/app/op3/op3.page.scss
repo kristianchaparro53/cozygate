@@ -22,7 +22,7 @@ h2{
     text-align: center;
 }
 
-.boton {
+.botonC {
     height: 40px;
     color: #000000;
     padding: 5px 10px;
@@ -37,7 +37,33 @@ h2{
     margin-left: auto;
     margin-right: auto;
   }
+  //Footer de botones/  //Relative: algo al margen y absoluto para flotantes. FIxed posición fija
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #4682B4;
+    padding: 17px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+        .boton {
+        background-color: transparent;
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-size: 23px;
+        }
+  }
+
+///Para quitar el fondo del botón/
+.boton{
+    background-color: transparent;
+    color: black;
+}
   /*Ajuste a diferentes pantallas*/
 //Celular
 @media (max-width: 576px) {

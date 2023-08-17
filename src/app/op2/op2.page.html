@@ -28,19 +28,8 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card-content class="ion-text-center">
-    <ion-button expand="block" color="danger" (click)="BackToTab1()"><b style="color: black;">Prueba</b></ion-button>
-  </ion-card-content>
-
-  <ion-card-content class="ion-text-center">
-    <ion-button expand="block" color="danger" (click)="BackToTab2()"><b style="color: black;">Prueba</b></ion-button>
-  </ion-card-content>
-
-  <ion-card-content class="ion-text-center">
-    <ion-button expand="block" color="danger" (click)="BackToTab3()"><b style="color: black;">Prueba</b></ion-button>
-  </ion-card-content>
-
-
+  <br><br>
+    
   <ion-card color="light">
     <ion-card-header>
       <ion-card-subtitle> <ion-icon name="car"></ion-icon> Mis Vehículos </ion-card-subtitle>
@@ -52,4 +41,19 @@
       <ion-button (click)="vehiculos()" expand="block" color="secondary"><b>Administrar</b></ion-button> 
     </ion-card-content>
   </ion-card>
+
+  <br><br>
+  <!--Footer para opciones-->
+  <div class="footer">
+    <button class="boton"  (click)="BackToTab1()">
+      <ion-icon name="qr-code"></ion-icon>
+    </button>
+    <button class="boton" (click)="BackToTab2()">
+      <ion-icon name="home"></ion-icon>
+    </button>
+    <button class="boton">
+      <ion-icon name="person" (click)="BackToTab3()"></ion-icon>
+    </button>
+  </div>  
+
 </ion-content>

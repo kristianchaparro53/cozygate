@@ -36,6 +36,20 @@
         
       </ion-item>
     </ion-list>
-    <button ion-button (click)="cerrarSesion()" class="boton" color="danger">Cerrar sesión</button>
+    <button ion-button (click)="cerrarSesion()" class="botonC" color="danger">Cerrar sesión</button>
   </ion-grid>
 </ion-content>
+
+<br><br>
+  <!--Footer para opciones-->
+  <div class="footer">
+    <button class="boton"  (click)="BackToTab1()">
+      <ion-icon name="qr-code"></ion-icon>
+    </button>
+    <button class="boton" (click)="BackToTab2()">
+      <ion-icon name="home"></ion-icon>
+    </button>
+    <button class="boton">
+      <ion-icon name="person" (click)="BackToTab3()"></ion-icon>
+    </button>
+  </div>  
