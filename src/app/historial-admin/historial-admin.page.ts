@@ -9,11 +9,13 @@ import { ConexionMBDService } from '../services/conexion-mbd.service';
 })
 export class HistorialAdminPage implements OnInit {
 
-
+  //Instancia creada para copiar los datos del arreglo
   visita: any =[]
   public results = [...this.visita];
   constructor(private router: Router, private conexion: ConexionMBDService) { }
 
+
+  /// Metodo get, llama todos los datos que estan almacenados en la collecion de Visitantes
   ngOnInit() {
     this.conexion.getVisita().subscribe(data =>{
       this.visita = data;

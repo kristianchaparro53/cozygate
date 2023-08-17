@@ -29,6 +29,7 @@ export class RegistroAPage implements OnInit {
         this.conexion.updateAdmin(data.User,pass={Password:Npass.value}).subscribe(data =>{
           console.log(data)
         })
+        this.router.navigate(['/login-ad]'])
         
       }else{
 

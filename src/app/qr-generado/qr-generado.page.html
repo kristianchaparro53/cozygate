@@ -23,7 +23,10 @@
       <ion-card-content>
         <ion-list>
           <ion-item>
-
+              <!--  Se toma la variable data3 el cual almacena los datos de la collecion visitantes
+              y con el "." se le indica que tome el _id de la collecion para asignarselo al qr como valor
+              
+              -->
             <qrcode class="codigo" [qrdata]="data3._id"  [width]="200" [errorCorrectionLevel]="'M'"></qrcode>            
           
           </ion-item>

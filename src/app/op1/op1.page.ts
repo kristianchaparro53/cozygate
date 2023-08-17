@@ -24,7 +24,7 @@ export class Op1Page implements OnInit {
     return id    
     
   }
-
+  
 
   getUserByUID (uid:String){
     this.conexion.getOne(uid.toString()).subscribe(

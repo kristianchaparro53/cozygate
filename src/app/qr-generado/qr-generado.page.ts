@@ -40,9 +40,14 @@ export class QrGeneradoPage implements OnInit {
   }
   data2 ={ Correo:"",_id:""}
   data3 ={ Name:"",_id:"",Tipo:"",Date:"",Modelo:"",Placa:"",Uid:""} 
+
+
+
   Back(){
     this.router.navigate(['/op1',this.data2._id])
   }
+
+  /*los datos devueltos por el servidor se capturan en el parámetro data4. Luego, estos datos se asignan al objeto data3.*/ 
 
   getVisitaqr(Uid:String){
     this.conexion.getOneVisita(Uid.toString()).subscribe(

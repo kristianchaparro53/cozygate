@@ -16,9 +16,13 @@ export class HistorialResidentePage implements OnInit {
   Back(){
     this.router.navigate(['/op1'])
   }
+
+  // Extraer los datos directamente de la URL
   ionViewDidEnter() {
     this.getUserByUID(this.getIDFromURL());
   }
+
+  // Medir las distancia entre carpetas  
   getIDFromURL(){
     let url = this.router.url
     let arr = url.split("/",3)
@@ -27,7 +31,7 @@ export class HistorialResidentePage implements OnInit {
     
   }
 
-
+  // Metodo get atravez del URL ya extraido anteriormente
   getUserByUID (uid:String){
     this.conexion.getOne(uid.toString()).subscribe(
       (data)=>{
@@ -39,5 +43,6 @@ export class HistorialResidentePage implements OnInit {
       }
     )
   }
+  //Almacenar los datos que se encuentran en la collecion 
   data2 ={ Correo:"",_id:""}
 }

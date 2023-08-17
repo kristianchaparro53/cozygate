@@ -41,7 +41,9 @@ export class RegistroVisitaPage implements OnInit {
     )
   }
   data2 ={ Correo:"",_id:""}
-
+  // Metodo post, el metodo llamado enviar
+  // se le asigna los siguientes atributos los cuales son llamados desde el formulario
+  // y enviaddos ala base de datos con el metoddo post realizado anteriormete
   enviar(name:any,tipo:any,fecha:any,model:any,placa:any){
 
     let wenas=this.data2._id

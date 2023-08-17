@@ -19,7 +19,11 @@ export class LoginPage implements OnInit {
   }
   
 
-   ///Función de Cambio a bienvenida
+   /// Validacion del inicio de sesion
+
+    // Atra vez del metodo get verifica si lo que almacena la variable correo
+    // se encuentra en la coleccion, una vez el correo encontrado, verifica si la contrasena
+    // que se a introducido se encuentra en la misma coleccion
   goToTab2(correo:any,pass:any){
     this.conexion.getOne(correo.value).subscribe(data =>{
       console.log(data)
@@ -45,7 +49,7 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/registro-u'])
   }
 
-  //Ojo Password
+  //Visualizar la contrasena 
   togglePassword():void{
     this.showPassword = !this.showPassword;
 

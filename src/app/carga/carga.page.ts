@@ -10,6 +10,8 @@ export class CargaPage implements OnInit {
 
   constructor(private router: Router) { }
 
+
+  
   ngOnInit() {
     const setTime = () => {
       
