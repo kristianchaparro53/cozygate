@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/op1/:Uid"></ion-back-button>
+      <ion-back-button defaultHref="/op1/:correo"></ion-back-button>
     </ion-buttons>
     <ion-title class="historial">
       <b>Historial de visitas</b>
@@ -12,9 +12,9 @@
 <ion-content [fullscreen]="true">
   <p><b>Tus visitas creadas son las siguientes:</b></p>
   <ion-list>
-    <ion-item>
-      <ion-label>1. Ismael Rojas</ion-label>
-      <button class="btns"><ion-icon name="trash" class="btns"></ion-icon></button>
+    <ion-item *ngFor="let result of results">
+      <ion-label>{{result.Name}} </ion-label>
+      <button ion-button class="btns" (click)="Eliminar(result.Uid)"><ion-icon name="trash" class="btns"></ion-icon></button>
     </ion-item>
   </ion-list>
 </ion-content>

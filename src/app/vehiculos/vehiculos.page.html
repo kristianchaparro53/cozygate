@@ -15,8 +15,8 @@
   <h2 class="ttt">Si desea registrar los datos de su vehículo, ingrese los siguientes datos:</h2>
 
       <!--Registrar vehículo-->
-      <ion-input placeholder="Modelo"
-        label="Modelo"
+      <ion-input #mode placeholder="Marca"
+        label="Marca"
         label-placement="floating"
         fill="outline"
         error-Text="Ingrese el modelo de su vehículo"
@@ -24,7 +24,7 @@
         required>
       </ion-input>
 
-      <ion-input placeholder="Año"
+      <ion-input #ano placeholder="Año"
         label="Año"
         label-placement="floating"
         fill="outline"
@@ -33,7 +33,7 @@
         required>
       </ion-input>
 
-      <ion-input placeholder="Color"
+      <ion-input #color placeholder="Color"
         label="Color"
         label-placement="floating"
         fill="outline"
@@ -42,7 +42,7 @@
         required>
       </ion-input>
 
-      <ion-input placeholder="Placas"
+      <ion-input #placa placeholder="Placas"
         label="Placa"
         label-placement="floating"
         fill="outline"
@@ -52,73 +52,9 @@
       </ion-input>
 
       <div class="image-container">
-        <img class="fill" src="assets/icon/fondoVehiculo.png" alt="backLogo">
-        <button class="boton">Subir imagen</button>
+       
+        <button ion-button class="boton" (click)="RegistrarV(mode,ano,color,placa)">Subir imagen</button>
       </div>
 
-      <!--Bloque separador-->
-      <div class="bloque"></div>
-
-      <br>
-      <ion-grid>
-      <h1 class="tt"><b>Datos del vehículo</b></h1>
-        <ion-list>
-          <ion-item>
-            <ion-row>
-              <ion-col size="4"><b>Modelo: </b></ion-col>
-              <ion-col size="8">*****</ion-col>
-              <ion-col size="4"></ion-col>
-              <ion-col size="8" class="editar">
-                <ion-button fill="outline">
-                  Editar
-                  <ion-icon slot="end" name="create"></ion-icon>
-                </ion-button>
-              </ion-col>
-            </ion-row>
-          </ion-item>
-          <ion-item>
-            <ion-row>
-              <ion-col size="4"><b>Año: </b></ion-col>
-              <ion-col size="8">*****</ion-col>
-              <ion-col size="4"></ion-col>
-              <ion-col size="8" class="editar">
-                <ion-button fill="outline">
-                  Editar
-                  <ion-icon slot="end" name="create"></ion-icon>
-                </ion-button>
-              </ion-col>
-            </ion-row>
-          </ion-item>
-          <ion-item>
-            <ion-row>
-              <ion-col size="4"><b>Color: </b></ion-col>
-              <ion-col size="8">*****</ion-col>
-              <ion-col size="4"></ion-col>
-              <ion-col size="12" class="editar">
-                <ion-button fill="outline">
-                  Editar
-                  <ion-icon slot="end" name="create"></ion-icon>
-                </ion-button>
-              </ion-col>
-            </ion-row>
-          </ion-item>
-          <ion-item>
-            <ion-row>
-              <ion-col size="4"><b>Placa: </b></ion-col>
-              <ion-col size="8">*****</ion-col>
-              <ion-col size="4"></ion-col>
-              <ion-col size="8" class="editar">
-                <ion-button fill="outline">
-                  Editar
-                  <ion-icon slot="end" name="create"></ion-icon>
-                </ion-button>
-              </ion-col>
-            </ion-row>
-          </ion-item>
-        </ion-list>
-        <div class="image-container">
-          <img class="fill" src="assets/icon/fondoVehiculo.png" alt="backLogo">
-          <button class="boton">Cambiar Imagen</button>
-        </div>
-      </ion-grid>
+      
 </ion-content>

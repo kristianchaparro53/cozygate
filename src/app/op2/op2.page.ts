@@ -53,7 +53,7 @@ export class Op2Page implements OnInit {
     this.router.navigate(['/op3',this.data2.Correo])
   }
   vehiculos(){
-    this.router.navigate(['/vehiculos'])
+    this.router.navigate(['/vehiculos',this.data2.Correo])
   }
 
 }

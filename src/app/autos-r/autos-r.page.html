@@ -1,52 +1,52 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/login-ad"></ion-back-button>
+      <ion-back-button defaultHref="/lista-habit"></ion-back-button>
     </ion-buttons>
     <ion-title class="listaH">
-      <b>Lista de habitantes</b>
+      <b>Vehículos registrados</b>
     </ion-title>
     <ion-buttons slot="end">
-      <ion-icon name="reader-sharp" (click)="GotoHist()"></ion-icon>
+      <ion-icon name="log-out"></ion-icon>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
   <ion-item *ngFor="let result of results">
   <ion-card>
     <ion-grid class="tabla">
         <ion-row class="encabezado">
           <ion-col class="centrarTexto">
-            <ion-card-title class="datosT"><b>Nombre</b></ion-card-title>
+            <ion-card-title class="datosT"><b>Dueño</b></ion-card-title>
           </ion-col>
           <ion-col class="centrarTexto">
-            <ion-card-title class="datosT"><b>Calle</b></ion-card-title>
+            <ion-card-title class="datosT"><b>Marca</b></ion-card-title>
           </ion-col>
           <ion-col class="centrarTexto">
-            <ion-card-title class="datosT"><b># Casa</b></ion-card-title>
+            <ion-card-title class="datosT"><b>Color</b></ion-card-title>
           </ion-col>
           <ion-col class="centrarTexto">
-            <ion-card-title class="datosT"><b>Celular</b></ion-card-title>
+            <ion-card-title class="datosT"><b>Placas</b></ion-card-title>
           </ion-col>
+          
         </ion-row>
 
       <ion-row>
         <ion-col class="centrarTexto">
-          <ion-card-title class="datosTC">{{result.Name}}</ion-card-title>
+          <ion-card-title class="datosTC">{{result.Correo}}</ion-card-title>
         </ion-col>
         <ion-col class="centrarTexto">
-          <ion-card-title class="datosTC">{{result.Calle}}</ion-card-title>
+          <ion-card-title class="datosTC">{{result.Modelo}}</ion-card-title>
         </ion-col>
         <ion-col class="centrarTexto">
-          <ion-card-title class="datosTC">{{result.Casa}}</ion-card-title>
+          <ion-card-title class="datosTC">{{result.Color}}</ion-card-title>
         </ion-col>
         <ion-col class="centrarTexto">
-          <ion-card-title class="datosTC">{{result.Cel}}</ion-card-title>
+          <ion-card-title class="datosTC">{{result.Placas}}</ion-card-title>
         </ion-col>
       </ion-row>
     </ion-grid>
   </ion-card>
-</ion-item>
+  </ion-item>
 </ion-content>

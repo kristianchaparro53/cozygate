@@ -48,11 +48,11 @@ const routes: Routes = [
     loadChildren: () => import('./qr-generado/qr-generado.module').then( m => m.QrGeneradoPageModule)
   },
   {
-    path: 'vehiculos',
+    path: 'vehiculos/:correo',
     loadChildren: () => import('./vehiculos/vehiculos.module').then( m => m.VehiculosPageModule)
   },
   {
-    path: 'registro-residentes',
+    path: 'registro-residentes/:correo',
     loadChildren: () => import('./registro-residentes/registro-residentes.module').then( m => m.RegistroResidentesPageModule)
   },
   {
@@ -90,6 +90,18 @@ const routes: Routes = [
   {
     path: 'op3/:correo',
     loadChildren: () => import('./op3/op3.module').then( m => m.Op3PageModule)
+  },
+  {
+    path: 'menu-a',
+    loadChildren: () => import('./menu-a/menu-a.module').then( m => m.MenuAPageModule)
+  },
+  {
+    path: 'autos-r',
+    loadChildren: () => import('./autos-r/autos-r.module').then( m => m.AutosRPageModule)
+  },
+  {
+    path: 'quejas-r',
+    loadChildren: () => import('./quejas-r/quejas-r.module').then( m => m.QuejasRPageModule)
   }
 ];
 @NgModule({

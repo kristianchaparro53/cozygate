@@ -37,7 +37,7 @@ export class Op1Page implements OnInit {
       }
     )
   }
-  data2 ={ Correo:""}
+  data2 ={ Correo:"",_id:""}
 
 
   GotoGenerarV(){

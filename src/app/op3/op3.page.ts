@@ -32,13 +32,28 @@ export class Op3Page implements OnInit {
       (data)=>{
       this.data2=data;
       console.log(this.data2.Correo)
+      
       },
       (error)=>{
         console.log(error);
       }
     )
   }
-  data2 ={ Correo:""}
+  
+  data2 ={ Correo:"",Name:"", Cel:"",Casa:"",Calle:""}
+  data3 ={ Name:"",_id:"",Correo:"",Calle:"",Casa:"",Cel:""} 
+
+  getOne(data2:String){
+    this.conexion.getOne(data2.toString()).subscribe(
+      (data4)=>{
+        this.data3=data4
+
+      },(error)=>{
+        console.log(error);
+      }
+      
+    )
+  }
   
   
 

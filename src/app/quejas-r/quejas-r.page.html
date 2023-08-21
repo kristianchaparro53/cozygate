@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/principal"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="quejasU">
+      <b>Quejas de usuarios</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p><b>Tu buzón de quejas son las siguientes:</b></p>
+  
+  <div class="contenedorQ">
+    
+    <ion-list *ngFor="let result of results">
+      
+      <div class="bloque"> 
+      </div>
+   <!--<button ion-button class="eliminar">
+        <img alt="Eliminar" src="assets/img/trash.png" class="iconE"/>
+      </button>-->   
+      <ion-item>
+        <ion-label><b>Correo:</b>{{result.Correo}}  </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><b>Asunto:</b>{{result.Asunto}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label class="mensaje"><b>Mensaje:</b> <br>{{result.Mensaje}}</ion-label>
+      </ion-item>
+                
+
+    </ion-list>
+  </div>
+
+  <br>
+</ion-content>

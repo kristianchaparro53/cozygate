@@ -29,17 +29,15 @@ export class RegistroAPage implements OnInit {
         this.conexion.updateAdmin(data.User,pass={Password:Npass.value}).subscribe(data =>{
           console.log(data)
         })
-        this.router.navigate(['/login-ad]'])
+        this.router.navigate(['/login-ad'])
         
-      }else{
+      }else if (pass.value != data.Password){
 
-        console.log("NO")
+        console.log("Constrasena incorrecta")
       }
-        
-      //this.router.navigate(['/principal]'])
 
     })
-    //this.router.navigate(['/login-ad'])
+    
   }
   cancelarRA(){
     this.router.navigate(['/login-ad'])

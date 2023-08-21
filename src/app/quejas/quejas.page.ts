@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ConexionMBDService } from '../services/conexion-mbd.service';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-quejas',
@@ -9,16 +10,18 @@ import { ConexionMBDService } from '../services/conexion-mbd.service';
 })
 export class QuejasPage implements OnInit {
 
-  constructor(private router: Router,private conexion:ConexionMBDService) { }
+  constructor(private router: Router,private conexion:ConexionMBDService,private alertController:AlertController) { }
 
   ngOnInit() {
   }
 
-  enviar(){
-    this.router.navigate(['/tabs/tab1'])
-  }
-  cancelar(){
-    this.router.navigate(['/tabs/tab1'])
+  
+
+
+  async cancelar(){
+    //this.router.navigate(['/op1',this.data2._id])
+
+    
   }
   ionViewDidEnter() {
     this.getUserByUID(this.getIDFromURL());
@@ -44,4 +47,29 @@ export class QuejasPage implements OnInit {
     )
   }
   data2 ={ Correo:"",_id:""}
+  
+  
+enviar(asunto:any,mensaje:any){
+
+  let Agregar= {Correo:this.data2.Correo,Asunto:asunto.value,Mensaje:mensaje.value}
+
+  this.conexion.addquejas(Agregar).subscribe(async data =>{
+    console.log(data)
+
+    const alert = await this.alertController.create({
+      header: 'Registro de Usuario',
+      message:'Gracias por quejarse',
+      buttons: [
+        {
+          text: 'Aceptar',
+          role: 'Aceptar',
+        },
+      ]
+    });
+    await alert.present();
+
+  })
+  asunto.value='', mensaje.value=''
+    
+  }
 }

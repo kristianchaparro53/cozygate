@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title class="listaH">
+      <b>Administrador</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <b><p class="ppp">Bienvenido Administrador</p></b>
+  <p class="pp">Selecciona alguna opción para acceder a las 
+    funcionalidades que tienes a tu disposición</p>
+  <ion-card>
+    <ion-card-content class="botones">
+          <!-- BOTONES PARA IR A PANTALLAS-->
+           <!--Arriba-->
+          <ion-row>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoGenerarV()" class="lista">
+                <img alt="icon" src="assets/img/11.png" class="iconL"/> 
+              </button>
+              <p><b>Lista de habitantes</b></p> 
+            </ion-col>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoQR()" class="historial">
+                <img alt="icon" src="assets/img/22.png" class="iconH"/> 
+              </button>
+              <p><b>Historial de E/S</b></p> 
+            </ion-col>
+          </ion-row>
+
+          <!--Abajo-->
+          <ion-row>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoHist()" class="autos">
+                <img alt="icon" src="assets/img/33.png" class="iconA"/> 
+              </button>
+              <p><b>Autos registrados</b></p>
+            </ion-col>
+            <ion-col size="6" class="boton-col">
+              <button ion-button (click)="GotoQuejas()" class="quejas">
+                <img alt="icon" src="assets/img/55.png" class="iconQ"/> 
+              </button>
+              <p><b>Quejas recibidas</b></p>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      <ion-card-content>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row>
+    <ion-col size="12" class="boton-col">
+      <button ion-button (click)="back()" class="cerrar">
+        <p><b>Cerrar sesión</b></p>
+      </button>
+    </ion-col>
+  </ion-row>
+       
+</ion-content>

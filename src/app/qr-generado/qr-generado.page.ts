@@ -30,8 +30,8 @@ export class QrGeneradoPage implements OnInit {
     this.conexion.getOne(uid.toString()).subscribe(
       (data)=>{
       this.data2=data;
-      this.getVisitaqr(this.data2._id)
-
+      this.getVisitaqr(data._id)
+        console.log(data._id)
       },
       (error)=>{
         console.log(error);
@@ -50,9 +50,10 @@ export class QrGeneradoPage implements OnInit {
   /*los datos devueltos por el servidor se capturan en el parámetro data4. Luego, estos datos se asignan al objeto data3.*/ 
 
   getVisitaqr(Uid:String){
-    this.conexion.getOneVisita(Uid.toString()).subscribe(
-      (data4)=>{
-        this.data3=data4
+    this.conexion.getOneVisitaQR(Uid.toString()).subscribe(
+      (data4:any[])=>{
+        this.data3=data4[0]
+        console.log(data4)
       },(error)=>{
         console.log(error);
       }

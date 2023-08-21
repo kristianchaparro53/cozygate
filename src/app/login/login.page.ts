@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ConexionMBDService } from '../services/conexion-mbd.service';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginPage implements OnInit {
   showPassword = false;
   passwordToggleIcon = 'eye';
 
-  constructor(private router: Router,private conexion:ConexionMBDService) { }
+  constructor(private router: Router,private conexion:ConexionMBDService,private alertController:AlertController) { }
 
   ngOnInit() {
   }
@@ -25,7 +26,7 @@ export class LoginPage implements OnInit {
     // se encuentra en la coleccion, una vez el correo encontrado, verifica si la contrasena
     // que se a introducido se encuentra en la misma coleccion
   goToTab2(correo:any,pass:any){
-    this.conexion.getOne(correo.value).subscribe(data =>{
+    this.conexion.getOne(correo.value).subscribe( async data =>{
       console.log(data)
 
         if(pass.value == data.Password){
@@ -33,7 +34,18 @@ export class LoginPage implements OnInit {
         this.router.navigate(['op2',correo.value])
 
         }else{
-
+          
+          const alert = await this.alertController.create({
+            header: 'Registro de Usuario',
+            message: 'Correo y/o Contraseña Incorrecta ',
+            buttons: [
+              {
+                text: 'Aceptar',
+                role: 'Aceptar',
+              },
+            ]
+          });
+          await alert.present();
           console.log("NO")
         }
       //this.router.navigate(['/principal]'])
@@ -42,6 +54,8 @@ export class LoginPage implements OnInit {
     
     
   }
+
+  
   goToNewContra(){
     this.router.navigate(['/newcontra'])
   }

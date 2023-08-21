@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ConexionMBDService } from '../services/conexion-mbd.service';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login-ad',
@@ -12,20 +14,48 @@ export class LoginAdPage implements OnInit {
   showPassword = false;
   passwordToggleIcon = 'eye';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private conexion:ConexionMBDService,private alertController:AlertController) { }
 
   ngOnInit() {
   }
   ///Función de Cambio a bienvenida
-  goToLista(){
-    this.router.navigate(['/lista-habit'])
-  }
+  
   goToNContraA(){
     this.router.navigate(['/newcontra-a'])
   }
   goToRegistroA(){
     this.router.navigate(['/registro-a'])
   }
+
+  goToLista(correo:any,pass:any){
+    this.conexion.getOneAdmin(correo.value).subscribe(async data =>{
+      console.log(data)
+
+        if(pass.value == data.Password){
+          console.log("si")
+        this.router.navigate(['menu-a'])
+
+        }else{
+          const alert = await this.alertController.create({
+            header: 'Registro de Usuario',
+            message: 'Correo y/o Contraseña Incorrecta ',
+            buttons: [
+              {
+                text: 'Aceptar',
+                role: 'Aceptar',
+              },
+            ]
+          });
+          await alert.present();
+          console.log("NO")
+        }
+      //this.router.navigate(['/principal]'])
+
+    })
+
+  }
+
+
 
    //Ojo Password
    togglePassword():void{

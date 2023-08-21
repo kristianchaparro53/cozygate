@@ -1,0 +1,111 @@
+//Toolbar/
+.quejasU {
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  ion-toolbar {
+    ion-buttons[slot="start"] {
+      width: 30px; //ancho del back/
+      margin-right: 0;
+    }
+
+    ion-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -30px; //margen Izq/
+      width: calc(100% + 30px); //ancho del Back/
+    }
+  }
+  //EStilo trash/
+.eliminar {
+  background-color: rgb(224, 0, 0);
+  border-radius: 50%; 
+  padding: 5px; 
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 15px;
+}
+
+.eliminar .iconE {
+  width: 20px;
+  height: 20px;
+}
+
+
+//Texto de quejas/
+p{
+    text-align: justify;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 16px;
+}
+
+.contenedorQ {
+    padding: 10px; //Espacio de la lista/
+    border-radius: 5px;
+    box-shadow: 0 2px 4px; //Sombra del div/
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .contenedorQ ion-list {
+    margin: 0; ///Eliminar margen de la lista/
+  }
+
+  .contenedorQ ion-item {
+    border-bottom: 1px solid #ccc;
+    padding: 2px 0; //espacio entre cada item/
+    margin: 0; //Eliminar margen de la lista/
+  }
+  .bloque{
+    width: 100%;
+    height: 2px;
+    margin: auto;
+    
+    background-color: #000;
+
+  }
+
+//Ajustar el contenido del mensaje
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mensaje ion-label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; //Tamaño máximo
+  }
+
+//Ajuste a diferentes pantallas/
+//Celular
+@media (max-width: 576px) {
+  ion-content {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+//Tablets
+@media (min-width: 577px) and (max-width: 991px) {
+  ion-content {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+//Computadora
+@media (min-width: 992px) {
+  ion-content {
+    font-size: 18px;
+    padding: 30px;
+  }
+  .mensaje ion-label {
+    max-width: 200px; //Ancho del msj
+  }
+}

@@ -1,4 +1,4 @@
-/*Toolbar*/
+//Toolbar/
 .listaH {
   text-align: center;
   display: flex;
@@ -9,7 +9,7 @@
 
 ion-toolbar {
   ion-buttons[slot="start"] {
-    width: 30px; /*ancho del back*/
+    width: 30px; //ancho del back/
     margin-right: 0;
   }
 
@@ -17,10 +17,92 @@ ion-toolbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -24px; /*margen Izq*/
-    width: calc(100% + 30px); /*ancho del Back*/
+    margin-left: -24px; //margen Izq/
+    width: calc(100% + 30px); //ancho del Back/
   }
 }
+
+//Diseño delñ texto/
+.ppp{
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+.pp{
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+//Botones genradores/
+/* Estilo para los botones */
+.boton-col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+  /* Estilo para el contenido de los botones */
+  .botones p {
+      text-align: center;
+      margin-top: 5px; 
+      color: black;
+  }
+
+//Design of function of buttons/
+.lista{
+  width: 70px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.iconL{
+  padding: 1px;
+}
+//Ver historial
+.historial{
+  width: 70px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.iconH{
+  padding: 6px;
+}
+//autos
+.autos{
+  width: 70px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.iconA{
+  padding: 6px;
+}
+//cerar//quejas
+.quejas{
+    width: 70px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  .iconQ{
+    padding: 5px;
+  }
+  .cerrar{
+    margin-top: -2px;
+    width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    background: black;
+    color: white;
+  }
+  .iconC{
+    padding: 5px;
+  }
 
 /*Logout
 .logout {
@@ -47,7 +129,7 @@ ion-toolbar {
   height: 12px;
 }
 
-/*Tabla de habitantes*/
+//Tabla de habitantes/
 .tabla {
   ion-row {
     ion-col {
@@ -115,57 +197,5 @@ ion-icon {
   ion-content {
     font-size: 18px;
     padding: 30px;
-  }
-}
-
-//Diseño extra de ajuste/
-.datosT {
-  font-size: 14px;
-  background-color: #87CEEB;
-}
-
-.datosTC {
-  font-size: 14px;
-}
-
-//Tabla de lista/
-.tabla {
-  ion-row {
-    ion-col {
-      ion-card-title {
-        padding: 8px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-
-        ion-button {
-          margin-left: 5px; 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        ion-button:first-child {
-          margin-right: 5px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-      }
-    }
-    .botones-col {
-      display: flex;
-      justify-content: center; //Alinear los botones H
-      align-items: center; //Alinear los botones V
-    }
-    .centrarTexto {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-  }
-
-  .encabezado {
-    background-color: #87CEEB;
   }
 }
